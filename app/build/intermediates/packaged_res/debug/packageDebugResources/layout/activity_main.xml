@@ -40,6 +40,13 @@
             android:padding="10dp"
             android:text="@string/scan_ingredients"
             android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/savedItemsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Saved Items" />
     </LinearLayout>
 
     <ImageView
@@ -50,4 +57,5 @@
         android:layout_centerHorizontal="true"
         android:contentDescription="@string/parsafood_logo_descr"
         android:src="@drawable/food_doctor" />
+
 </RelativeLayout>

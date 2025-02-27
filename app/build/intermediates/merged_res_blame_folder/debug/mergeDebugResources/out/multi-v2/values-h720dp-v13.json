@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.smartfoods.app-mergeDebugResources-32:/values-h720dp-v13/values-h720dp-v13.xml",
+            "outputFile": "com.example.smartfoods.app-mergeDebugResources-3:/values-h720dp-v13/values-h720dp-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\shama\\.gradle\\caches\\transforms-4\\1ad5d81293179a39a17ccecf7df9a6ef\\transformed\\appcompat-1.7.0\\res\\values-h720dp-v13\\values-h720dp-v13.xml",
+                    "source": "C:\\allergen\\IngredientsScanner\\gradle\\caches\\transforms-4\\3598fe1f9001ee772272b75e89042cb8\\transformed\\appcompat-1.7.0\\res\\values-h720dp-v13\\values-h720dp-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

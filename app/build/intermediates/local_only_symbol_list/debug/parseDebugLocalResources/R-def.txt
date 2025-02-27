@@ -39,6 +39,8 @@ id Gluten
 id Lactose
 id Milk
 id Peanut
+id SaveButton
+id SavedItemsLayout
 id Seafood
 id Soy
 id TakePicture
@@ -49,13 +51,17 @@ id Vegetarian
 id Wheat
 id age
 id age_input
+id expiryDate
 id graphicOverlay
 id height
 id height_input
 id icon
 id imageView
+id itemName
 id preview
 id read_text
+id savedItemsButton
+id savedItemsLayout
 id set_preferences
 id tableLayout
 id textView
@@ -66,6 +72,8 @@ id weight_input
 layout activity_after_capture
 layout activity_main
 layout activity_preferences
+layout activity_saved_items
+layout item_saved
 layout ocr_capture
 mipmap bg
 mipmap bg1
@@ -83,7 +91,12 @@ string basic_info_label
 string diet_label
 string egg_choice
 string enter_prefs
+string gcm_defaultSenderId
 string gluten_choice
+string google_api_key
+string google_app_id
+string google_crash_reporting_api_key
+string google_storage_bucket
 string height_label
 string lactose_choice
 string low_storage_error
@@ -97,6 +110,7 @@ string ok
 string parsafood_logo_descr
 string peanut_choice
 string permission_camera_rationale
+string project_id
 string scan_ingredients
 string scan_preferences
 string seafood_choice

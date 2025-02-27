@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "189202070319",
+    "project_id": "dynamic-food-labels",
+    "storage_bucket": "dynamic-food-labels.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:189202070319:android:fec17a44fb107f9095ffda",
+        "android_client_info": {
+          "package_name": "com.example.smartfoods"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDcbHCcIIK4jxGojaGBbDq9JLNSdmvib_A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

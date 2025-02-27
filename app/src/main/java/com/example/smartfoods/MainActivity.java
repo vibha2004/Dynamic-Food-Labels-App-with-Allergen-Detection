@@ -1,5 +1,5 @@
 package com.example.smartfoods;
-
+import com.google.firebase.FirebaseApp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private TextView textValue;
     private ImageView logo;
     private Button setPreferences;
+    private Button savedItemsButton; // Added Saved Items button
     private Drawable logoDrawable;
     private String preferences;
 
@@ -31,31 +32,37 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        setPreferences = (Button) findViewById(R.id.set_preferences);
-        //setPreferences = (Button) findViewById(R.id.set_preferences);
-/*        statusMessage = (TextView)findViewById(R.id.status_message);
-        textValue = (TextView)findViewById(R.id.text_value);*/
+        // Initialize Firebase
+        FirebaseApp.initializeApp(this);
 
+        setPreferences = findViewById(R.id.set_preferences);
+        savedItemsButton = findViewById(R.id.savedItemsButton); // Initialize Saved Items button
 
+        // Set OnClickListener for the Preferences button
         setPreferences.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getApplicationContext(),"Button is working",Toast.LENGTH_SHORT).show();
-                // Launch After Capture Activity
+                Toast.makeText(getApplicationContext(), "Button is working", Toast.LENGTH_SHORT).show();
+                // Launch Preferences Activity
                 Intent intent = new Intent(MainActivity.this, PreferencesActivity.class);
                 intent.putExtra("preferences", preferences);
-
                 startActivity(intent);
-
             }
         });
-        //logo = (ImageView)findViewById(R.id.Logo);
 
-        //logoDrawable = getResources().getDrawable(R.drawable.final_logo);
-        //logo.setImageDrawable(logoDrawable);
+
+            // Set OnClickListener for the Saved Items button
+savedItemsButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    // Navigate to SavedItemsActivity
+                    Intent intent = new Intent(MainActivity.this, SavedItemsActivity.class);
+                    startActivity(intent);
+                }
+
+        });
 
         preferences = getPreferencesFromActivity();
-
 
         findViewById(R.id.read_text).setOnClickListener(this);
     }
@@ -78,7 +85,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         if (v.getId() == R.id.read_text) {
-            // launch Ocr capture activity.
+            // Launch Ocr capture activity.
             Intent intent = new Intent(this, OcrCaptureActivity.class);
             intent.putExtra(OcrCaptureActivity.AutoFocus, true);
             intent.putExtra(OcrCaptureActivity.UseFlash, false);
