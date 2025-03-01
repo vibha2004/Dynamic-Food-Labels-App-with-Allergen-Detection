@@ -23,7 +23,7 @@ public class TextParser {
     // List of common date formats to try
     private static final String[] DATE_FORMATS = {
             "dd/MM/yy", "dd/MM/yyyy","MM/dd/yy", "yyyy-MM-dd", "dd-MM-yyyy",
-            "dd.MM.yyyy", "MM.dd.yyyy", "yyyy.MM.dd"
+            "dd.MM.yyyy", "MM.dd.yyyy", "yyyy.MM.dd","MM/yyyy"
     };
 
     public TextParser() {
