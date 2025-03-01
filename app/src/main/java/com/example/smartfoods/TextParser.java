@@ -22,8 +22,15 @@ public class TextParser {
 
     // List of common date formats to try
     private static final String[] DATE_FORMATS = {
-            "dd/MM/yy", "dd/MM/yyyy","MM/dd/yy", "yyyy-MM-dd", "dd-MM-yyyy",
-            "dd.MM.yyyy", "MM.dd.yyyy", "yyyy.MM.dd","MM/yyyy"
+            "dd/MM/yy", "dd/MM/yyyy", "MM/dd/yy", "MM/dd/yyyy", "yyyy-MM-dd", "dd-MM-yyyy",
+            "dd.MM.yyyy", "MM.dd.yyyy", "yyyy.MM.dd", "dd MMM yyyy", "dd MMMM yyyy", "MMM dd, yyyy",
+            "yyyy/MM/dd", "dd-MMM-yyyy", "MMM-dd-yyyy", "dd MMM yy", "MMM dd yy", "MMM yyyy",
+            "MM/yy", "MM/yyyy" // Added formats for month/year only
+    };
+
+    // Keywords to look for near dates
+    private static final String[] DATE_KEYWORDS = {
+            "expiry", "best before", "use by", "best by", "expires", "expiration", "valid until"
     };
 
     public TextParser() {
@@ -47,13 +54,25 @@ public class TextParser {
         List<String> potentialDates = new ArrayList<>();
 
         // Regex to match dates in various formats
-        String dateRegex = "\\b(\\d{1,2}[/.-]\\d{1,2}[/.-]\\d{2,4})\\b";
+        String dateRegex = "\\b(\\d{1,2}[/.-]\\d{1,2}[/.-]\\d{2,4})\\b|\\b(\\d{1,2} [A-Za-z]{3,9} \\d{2,4})\\b|\\b(\\d{2}[/.-]\\d{2,4})\\b";
         Pattern pattern = Pattern.compile(dateRegex);
 
         for (String line : ingredients) {
+            // Check for keywords near the date
+            boolean hasKeyword = false;
+            for (String keyword : DATE_KEYWORDS) {
+                if (line.toLowerCase().contains(keyword)) {
+                    hasKeyword = true;
+                    break;
+                }
+            }
+
             Matcher matcher = pattern.matcher(line);
             while (matcher.find()) {
-                potentialDates.add(matcher.group(1));
+                String dateStr = matcher.group(1) != null ? matcher.group(1) : (matcher.group(2) != null ? matcher.group(2) : matcher.group(3));
+                if (hasKeyword || isLikelyExpiryDate(dateStr)) {
+                    potentialDates.add(dateStr);
+                }
             }
         }
 
@@ -72,7 +91,7 @@ public class TextParser {
 
                     // If the date is in the future, it's likely the expiry date
                     if (difference > 0 && difference < minDifference) {
-                        expiryDate = dateStr;
+                        expiryDate = new SimpleDateFormat("dd/MM/yyyy").format(date); // Standardize the date format
                         minDifference = difference;
                     }
                 } catch (ParseException e) {
@@ -84,31 +103,30 @@ public class TextParser {
         return expiryDate;
     }
 
+    // Helper method to check if a date is likely an expiry date
+    private boolean isLikelyExpiryDate(String dateStr) {
+        // Add additional logic here if needed
+        return true; // For now, assume all dates are potential expiry dates
+    }
+
     // Rest of the existing methods...
     public static void main(String[] args) {
         TextParser tt = new TextParser();
 
         tt.setUserPreferences("1111111111");
-        ArrayList<String> ii = new ArrayList<>(Arrays.asList(" hoiusdfhium,, oifdshj hif  1.Gelatingt"));
-        ArrayList<ArrayList> done = tt.checkAllergens(ii);
-        ArrayList<String> done2 = tt.checkLactose(ii);
-        ArrayList<String> done3 = tt.checkVegan(ii);
+        ArrayList<String> ii = new ArrayList<>(Arrays.asList(
+                "Best before: 09/25",
+                "Expiry date: 12/2023",
+                "Use by 31 Dec 2023",
+                "Manufacturing date: 01/01/2023",
+                "Ingredients: milk, sugar, flour"
+        ));
 
-        for (ArrayList<String> sub : done) {
-            for (String str : sub) {
-                System.out.println(str);
-            }
-        }
-
-        for (String str : done2) {
-            System.out.println(str);
-        }
-
-        for (String str : done3) {
-            System.out.println(str);
-        }
+        String expiryDate = tt.extractExpiryDate(ii);
+        System.out.println("Extracted Expiry Date: " + expiryDate);
     }
 
+    // Rest of the existing methods...
     public int getUserBmr(int mass, int age, int height) {
         double menBmr = 66.473 + (13.7516 * mass) + (5.0033 * height) - (6.755 * age);
         double womenBmr = 655.0955 + (9.5634 * mass) + (1.8496 * height) + (4.6756 * age);
