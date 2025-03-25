@@ -1,5 +1,8 @@
 package com.example.smartfoods;
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Date;
+import java.util.Locale;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.graphics.Color;
@@ -45,7 +48,7 @@ public class SavedItemAdapter extends RecyclerView.Adapter<SavedItemAdapter.Save
             savedItems.remove(position);
             notifyItemRemoved(position);
             notifyItemRangeChanged(position, savedItems.size());
-            saveItemsToPreferences(); // Save updated list
+            saveItemsToPreferences();
         });
     }
 
@@ -66,25 +69,36 @@ public class SavedItemAdapter extends RecyclerView.Adapter<SavedItemAdapter.Save
     static class SavedItemViewHolder extends RecyclerView.ViewHolder {
         private final TextView itemName;
         private final TextView expiryDate;
-        private final Button deleteButton; // Add delete button
+        private final TextView daysLeftText; // TextView for days remaining
+        private final Button deleteButton;
 
         public SavedItemViewHolder(@NonNull View itemView) {
             super(itemView);
             itemName = itemView.findViewById(R.id.itemName);
             expiryDate = itemView.findViewById(R.id.expiryDate);
-            deleteButton = itemView.findViewById(R.id.deleteButton); // Initialize delete button
+            daysLeftText = itemView.findViewById(R.id.daysLeftText); // Add new TextView
+            deleteButton = itemView.findViewById(R.id.deleteButton);
         }
 
         public void bind(SavedItem item) {
             itemName.setText(item.getItemName());
-            expiryDate.setText(item.getExpiryDate());
+            expiryDate.setText("Expiry Date: " + item.getExpiryDate());
+
+            // Show days remaining
+            int daysLeft = item.getDaysUntilExpiry();
+            if (daysLeft >= 0) {
+                daysLeftText.setText(daysLeft + " days left");
+            } else {
+                daysLeftText.setText("Expired");
+            }
+
             setExpiryColor(item.getExpiryDate());
         }
 
         public void setExpiryColor(String expiryText) {
             int newColor = getExpiryColor(expiryText);
             expiryDate.setTextColor(newColor);
-            expiryDate.invalidate(); // Force UI redraw
+            daysLeftText.setTextColor(newColor); // Also update days left text color
         }
 
         private int getExpiryColor(String expiryText) {
@@ -93,31 +107,15 @@ public class SavedItemAdapter extends RecyclerView.Adapter<SavedItemAdapter.Save
             }
 
             try {
-                String numbersOnly = expiryText.replaceAll("[^0-9/-]", "");
-                String[] parts = numbersOnly.split("[/-]");
-
-                if (parts.length != 3) {
-                    return Color.GRAY;
-                }
-
-                int day = Integer.parseInt(parts[0]);
-                int month = Integer.parseInt(parts[1]);
-                int year = Integer.parseInt(parts[2]);
-
-                if (parts[2].length() == 2) {
-                    year += 2000;
-                }
+                String dateOnly = expiryText.replaceAll(".*?(\\d{1,2}[/-]\\d{1,2}[/-]\\d{2,4}).*", "$1");
+                SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy", Locale.US);
+                sdf.setLenient(false);
+                Date date = sdf.parse(dateOnly);
 
                 Calendar expiryCal = Calendar.getInstance();
-                expiryCal.set(year, month - 1, day, 0, 0, 0);
-                expiryCal.set(Calendar.MILLISECOND, 0);
+                expiryCal.setTime(date);
 
                 Calendar now = Calendar.getInstance();
-                now.set(Calendar.HOUR_OF_DAY, 0);
-                now.set(Calendar.MINUTE, 0);
-                now.set(Calendar.SECOND, 0);
-                now.set(Calendar.MILLISECOND, 0);
-
                 long diffDays = (expiryCal.getTimeInMillis() - now.getTimeInMillis()) / (24 * 60 * 60 * 1000);
 
                 if (diffDays > 7) {
@@ -135,5 +133,6 @@ public class SavedItemAdapter extends RecyclerView.Adapter<SavedItemAdapter.Save
         }
     }
 }
+
 
 

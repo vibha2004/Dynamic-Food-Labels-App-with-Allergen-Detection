@@ -27,6 +27,14 @@
             android:text="Expiry Date"
             android:textSize="16sp"
             android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/daysLeftText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Days Left"
+            android:textSize="16sp"
+            android:textStyle="italic"/>
     </LinearLayout>
 
     <Button
@@ -37,4 +45,5 @@
         android:backgroundTint="@android:color/holo_red_light"
         android:textColor="@android:color/white"/>
 </LinearLayout>
+
 

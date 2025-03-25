@@ -51,6 +51,7 @@ id Vegetarian
 id Wheat
 id age
 id age_input
+id daysLeftText
 id deleteButton
 id expiryDate
 id graphicOverlay

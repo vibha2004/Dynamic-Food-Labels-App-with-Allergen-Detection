@@ -3329,6 +3329,7 @@ id customPanel
 id cut
 id dark
 id date_picker_actions
+id daysLeftText
 id decelerate
 id decelerateAndComplete
 id decor_content_parent
