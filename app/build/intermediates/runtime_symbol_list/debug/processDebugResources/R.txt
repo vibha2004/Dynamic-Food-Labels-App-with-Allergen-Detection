@@ -3332,6 +3332,7 @@ int id decelerate 0x7f0a00a4
 int id decelerateAndComplete 0x7f0a00a5
 int id decor_content_parent 0x7f0a00a6
 int id default_activity_button 0x7f0a00a7
+int id deleteButton 0x7f0a0225
 int id deltaRelative 0x7f0a00a8
 int id dependency_ordering 0x7f0a00a9
 int id design_bottom_sheet 0x7f0a00aa
@@ -3561,6 +3562,7 @@ int id radio 0x7f0a0189
 int id ratio 0x7f0a018a
 int id read_text 0x7f0a018b
 int id rectangles 0x7f0a018c
+int id recyclerView 0x7f0a0226
 int id report_drawn 0x7f0a018d
 int id reverseSawtooth 0x7f0a018e
 int id right 0x7f0a018f
@@ -3572,7 +3574,6 @@ int id row_index_key 0x7f0a0194
 int id save_non_transition_alpha 0x7f0a0195
 int id save_overlay_view 0x7f0a0196
 int id savedItemsButton 0x7f0a0197
-int id savedItemsLayout 0x7f0a0198
 int id sawtooth 0x7f0a0199
 int id scale 0x7f0a019a
 int id screen 0x7f0a019b

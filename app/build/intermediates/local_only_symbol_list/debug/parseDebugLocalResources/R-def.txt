@@ -51,6 +51,7 @@ id Vegetarian
 id Wheat
 id age
 id age_input
+id deleteButton
 id expiryDate
 id graphicOverlay
 id height
@@ -60,8 +61,8 @@ id imageView
 id itemName
 id preview
 id read_text
+id recyclerView
 id savedItemsButton
-id savedItemsLayout
 id set_preferences
 id tableLayout
 id textView

@@ -8,8 +8,12 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
+import java.util.Locale;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.regex.Matcher;
 
 public class TextParser {
 
@@ -51,58 +55,44 @@ public class TextParser {
 
     // Method to extract and validate dates
     public String extractExpiryDate(ArrayList<String> ingredients) {
-        List<String> potentialDates = new ArrayList<>();
+        List<Date> foundDates = new ArrayList<>();
+        SimpleDateFormat outputFormat = new SimpleDateFormat("dd/MM/yyyy", Locale.US);
 
-        // Regex to match dates in various formats
-        String dateRegex = "\\b(\\d{1,2}[/.-]\\d{1,2}[/.-]\\d{2,4})\\b|\\b(\\d{1,2} [A-Za-z]{3,9} \\d{2,4})\\b|\\b(\\d{2}[/.-]\\d{2,4})\\b";
+        // Fixed regex pattern - properly escaped
+        String dateRegex = "\\b(\\d{1,2}[/-]\\d{1,2}[/-]\\d{2,4})\\b";
+        String datePattern = ".*\\(([0-9]{1,2}/[0-9]{1,2}/[0-9]{2,4})\\).*";
         Pattern pattern = Pattern.compile(dateRegex);
 
         for (String line : ingredients) {
-            // Check for keywords near the date
-            boolean hasKeyword = false;
-            for (String keyword : DATE_KEYWORDS) {
-                if (line.toLowerCase().contains(keyword)) {
-                    hasKeyword = true;
-                    break;
-                }
-            }
-
             Matcher matcher = pattern.matcher(line);
             while (matcher.find()) {
-                String dateStr = matcher.group(1) != null ? matcher.group(1) : (matcher.group(2) != null ? matcher.group(2) : matcher.group(3));
-                if (hasKeyword || isLikelyExpiryDate(dateStr)) {
-                    potentialDates.add(dateStr);
+                String dateStr = matcher.group();
+                for (String format : DATE_FORMATS) {
+                    try {
+                        SimpleDateFormat sdf = new SimpleDateFormat(format, Locale.US);
+                        sdf.setLenient(false);
+                        Date date = sdf.parse(dateStr);
+                        foundDates.add(date);
+                    } catch (ParseException ignored) {}
                 }
             }
         }
 
-        // Validate dates and determine expiry date
-        long currentTime = System.currentTimeMillis();
-        String expiryDate = null;
-        long minDifference = Long.MAX_VALUE;
-
-        for (String dateStr : potentialDates) {
-            for (String format : DATE_FORMATS) {
-                try {
-                    SimpleDateFormat sdf = new SimpleDateFormat(format);
-                    sdf.setLenient(false);
-                    Date date = sdf.parse(dateStr);
-                    long difference = date.getTime() - currentTime;
-
-                    // If the date is in the future, it's likely the expiry date
-                    if (difference > 0 && difference < minDifference) {
-                        expiryDate = new SimpleDateFormat("dd/MM/yyyy").format(date); // Standardize the date format
-                        minDifference = difference;
-                    }
-                } catch (ParseException e) {
-                    // Ignore and try the next format
-                }
+        // Sort dates using Comparator
+        Collections.sort(foundDates, new Comparator<Date>() {
+            @Override
+            public int compare(Date d1, Date d2) {
+                return d1.compareTo(d2);
             }
+        });
+
+        // Return the latest date as expiry
+        if (!foundDates.isEmpty()) {
+            return "Expiry Date: " + outputFormat.format(foundDates.get(foundDates.size()-1));
         }
 
-        return expiryDate;
+        return "Expiry Date: Not Found";
     }
-
     // Helper method to check if a date is likely an expiry date
     private boolean isLikelyExpiryDate(String dateStr) {
         // Add additional logic here if needed

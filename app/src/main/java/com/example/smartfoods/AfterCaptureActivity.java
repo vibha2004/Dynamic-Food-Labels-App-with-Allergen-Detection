@@ -32,7 +32,7 @@ public class AfterCaptureActivity extends AppCompatActivity {
     ArrayList<String> itemList;
     Button anotherPicture;
     Button textToSpeechButton;
-    Button saveButton; // Save button
+    Button saveButton;
     ImageView icon;
     TextView titleText;
     TextView expiryLabel;
@@ -43,7 +43,7 @@ public class AfterCaptureActivity extends AppCompatActivity {
     String preferences;
     TextToSpeech ts;
     StringBuilder speechText = new StringBuilder();
-    private static final long ONE_DAY_IN_MILLIS = 86400000; // 24 hours in milliseconds
+    private static final long ONE_DAY_IN_MILLIS = 86400000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,7 +51,7 @@ public class AfterCaptureActivity extends AppCompatActivity {
         setContentView(R.layout.activity_after_capture);
 
         anotherPicture = findViewById(R.id.AnotherPicture);
-        saveButton = findViewById(R.id.SaveButton); // Initialize save button
+        saveButton = findViewById(R.id.SaveButton);
         preferences = getIntent().getExtras().getString("preferences");
         Log.i("Prefs:", "In the after capture act " + preferences);
 
@@ -62,7 +62,6 @@ public class AfterCaptureActivity extends AppCompatActivity {
         textToSpeechButton = findViewById(R.id.TextToSpeech);
         expiryLabel = findViewById(R.id.ExpiryLabel);
 
-        // Log the item list to verify OCR text
         Log.i("ItemList", "Item List: " + itemList.toString());
 
         parser.setUserPreferences(preferences);
@@ -91,18 +90,10 @@ public class AfterCaptureActivity extends AppCompatActivity {
         ArrayList<String> vegetarianItems = parser.checkVegaterian(itemList);
         ArrayList<String> glutenItems = parser.checkGluten(itemList);
 
-        Log.i("size allergerns", "" + allergenItems.size());
-        Log.i("size lactoseItems", "" + lactoseItems.size());
-        Log.i("size veganItems", "" + veganItems.size());
-        Log.i("size vegetarianItems", "" + vegetarianItems.size());
-        Log.i("size glutenItems", "" + glutenItems.size());
-
         if (noBadIngredients(allergenItems, lactoseItems, veganItems, vegetarianItems, glutenItems)) {
-            Log.i("OK", "its a");
             speechText.append("The ingredients are okay.");
             icon.setImageDrawable(check);
         } else {
-            Log.i("OK", "its n");
             speechText.append("The ingredients are not okay, ");
             icon.setImageDrawable(check);
             titleText.setText("Ingredients are not OK. ");
@@ -112,76 +103,56 @@ public class AfterCaptureActivity extends AppCompatActivity {
             if (allergenItems.size() > 0) {
                 displayNegativeNested(allergenItems);
             }
-
             if (lactoseItems.size() > 0) {
                 displayNegative(lactoseItems);
             }
-
             if (veganItems.size() > 0) {
                 displayNegative(veganItems);
             }
-
             if (vegetarianItems.size() > 0) {
                 displayNegative(vegetarianItems);
             }
-
             if (glutenItems.size() > 0) {
                 displayNegative(glutenItems);
             }
         }
 
-        // Check expiry date
         String expiryDate = parser.extractExpiryDate(itemList);
-        Log.i("ExpiryDate", "Extracted Expiry Date: " + expiryDate); // Log the extracted expiry date
+        Log.i("ExpiryDate", "Extracted Expiry Date: " + expiryDate);
         checkExpiryDate(expiryDate);
 
-        anotherPicture.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(AfterCaptureActivity.this, OcrCaptureActivity.class);
-                intent.putExtra("preferences", preferences);
-                startActivity(intent);
+        anotherPicture.setOnClickListener(view -> {
+            Intent intent = new Intent(AfterCaptureActivity.this, OcrCaptureActivity.class);
+            intent.putExtra("preferences", preferences);
+            startActivity(intent);
+        });
+
+        textToSpeechButton.setOnClickListener(view -> {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                ts.speak(speechText.toString(), TextToSpeech.QUEUE_FLUSH, null, null);
+            } else {
+                ts.speak(speechText.toString(), TextToSpeech.QUEUE_FLUSH, null);
             }
         });
 
-        textToSpeechButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                    ts.speak(speechText.toString(), TextToSpeech.QUEUE_FLUSH, null, null);
-                } else {
-                    ts.speak(speechText.toString(), TextToSpeech.QUEUE_FLUSH, null);
-                }
-            }
-        });
-
-        saveButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                // Show a dialog to enter the item name
-                showSaveDialog(expiryDate);
-            }
-        });
+        saveButton.setOnClickListener(view -> showSaveDialog(expiryDate));
     }
 
-
     private void showSaveDialog(String expiryDate) {
-        // Create an EditText for the user to enter the item name
         final EditText input = new EditText(this);
         input.setHint("Enter item name");
 
-        // Create a dialog to prompt the user to enter the item name
         androidx.appcompat.app.AlertDialog.Builder builder = new androidx.appcompat.app.AlertDialog.Builder(this);
         builder.setTitle("Save Item")
                 .setView(input)
                 .setPositiveButton("Save", (dialog, which) -> {
                     String itemName = input.getText().toString();
                     if (!itemName.isEmpty()) {
-                        // If expiry date is null or empty, set it to "Not Found"
-                        String expiryLabelText = (expiryDate == null || expiryDate.isEmpty()) ? "Expiry Date: Not Found" : expiryDate;
+                        String expiryLabelText = (expiryDate == null || expiryDate.isEmpty()) ?
+                                "Expiry Date: Not Found" : expiryDate;
                         saveItem(itemName, expiryLabelText);
                     } else {
-                        Toast.makeText(AfterCaptureActivity.this, "Item name cannot be empty", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(this, "Item name cannot be empty", Toast.LENGTH_SHORT).show();
                     }
                 })
                 .setNegativeButton("Cancel", (dialog, which) -> dialog.cancel())
@@ -190,86 +161,81 @@ public class AfterCaptureActivity extends AppCompatActivity {
 
     private void saveItem(String itemName, String expiryDate) {
         int expiryColor = getExpiryColor(expiryDate);
-
-        // Create a new SavedItem object
         SavedItem savedItem = new SavedItem(itemName, expiryDate, expiryColor);
 
-        // Pass the saved item to SavedItemsActivity
-        Intent intent = new Intent(AfterCaptureActivity.this, SavedItemsActivity.class);
-        intent.putExtra("savedItem", savedItem); // Pass the SavedItem object
+        Intent intent = new Intent(this, SavedItemsActivity.class);
+        intent.putExtra("savedItem", savedItem);
         startActivity(intent);
-        finish(); // Close the current activity to avoid glitches
+        finish();
     }
 
     private int getExpiryColor(String expiryDate) {
-        if (expiryDate.equals("Expiry Date: Not Found")) {
-            return Color.GRAY; // Gray for "Not Found"
+        if (expiryDate == null || expiryDate.isEmpty() || expiryDate.equals("Expiry Date: Not Found")) {
+            return Color.GRAY;
         }
 
-        long currentTime = System.currentTimeMillis();
         long expiryTime = parseExpiryDate(expiryDate);
-
         if (expiryTime == -1) {
-            return Color.GRAY; // Invalid date format
+            return Color.GRAY;
         }
 
-        long difference = expiryTime - currentTime;
+        long difference = expiryTime - System.currentTimeMillis();
 
         if (difference > 7 * ONE_DAY_IN_MILLIS) {
-            return Color.GREEN; // Fresh
+            return Color.GREEN;
         } else if (difference > 0) {
-            return Color.YELLOW; // Near expiry
+            return Color.YELLOW;
         } else {
-            return Color.RED; // Expired
+            return Color.RED;
         }
     }
 
-
-
     private long parseExpiryDate(String expiryDate) {
+        if (expiryDate == null || expiryDate.isEmpty()) {
+            return -1;
+        }
+
         try {
+            // Extract just the date part (handles "Expiry Date: 20/08/2025" or "20/08/2025")
+            String dateOnly = expiryDate.replaceAll(".*?(\\d{1,2}[/-]\\d{1,2}[/-]\\d{2,4}).*", "$1");
+
             SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy", Locale.US);
-            Date date = sdf.parse(expiryDate);
+            sdf.setLenient(false);
+            Date date = sdf.parse(dateOnly);
             return date.getTime();
         } catch (ParseException e) {
-            e.printStackTrace();
-            Log.e("ExpiryDate", "Error parsing expiry date: " + expiryDate);
+            Log.e("ExpiryDate", "Error parsing expiry date: " + expiryDate, e);
             return -1;
         }
     }
 
     private void checkExpiryDate(String expiryDate) {
-        if (expiryDate == null || expiryDate.isEmpty()) {
+        if (expiryDate == null || expiryDate.isEmpty() || expiryDate.equals("Expiry Date: Not Found")) {
             expiryLabel.setText("Expiry Date: Not Found");
             expiryLabel.setBackgroundColor(Color.GRAY);
-            Log.i("ExpiryDate", "No expiry date found or invalid format");
+            return;
+        }
+
+        long expiryTime = parseExpiryDate(expiryDate);
+        if (expiryTime == -1) {
+            expiryLabel.setText("Expiry Date: Invalid Format");
+            expiryLabel.setBackgroundColor(Color.GRAY);
+            Log.e("ExpiryDate", "Invalid expiry date format: " + expiryDate);
             return;
         }
 
         long currentTime = System.currentTimeMillis();
-        long expiryTime = parseExpiryDate(expiryDate);
-
-        if (expiryTime == -1) {
-            expiryLabel.setText("Expiry Date: Invalid Format");
-            expiryLabel.setBackgroundColor(Color.GRAY);
-            Log.i("ExpiryDate", "Invalid expiry date format: " + expiryDate);
-            return;
-        }
-
         long difference = expiryTime - currentTime;
 
         if (difference > 7 * ONE_DAY_IN_MILLIS) {
             expiryLabel.setText("Expiry Date: Fresh (" + expiryDate + ")");
             expiryLabel.setBackgroundColor(Color.GREEN);
-            Log.i("ExpiryDate", "Product is fresh: " + expiryDate);
         } else if (difference > 0) {
             expiryLabel.setText("Expiry Date: Near Expiry (" + expiryDate + ")");
             expiryLabel.setBackgroundColor(Color.YELLOW);
-            Log.i("ExpiryDate", "Product is near expiry: " + expiryDate);
         } else {
             expiryLabel.setText("Expiry Date: Expired (" + expiryDate + ")");
             expiryLabel.setBackgroundColor(Color.RED);
-            Log.i("ExpiryDate", "Product is expired: " + expiryDate);
         }
     }
 
@@ -287,13 +253,14 @@ public class AfterCaptureActivity extends AppCompatActivity {
                 TextView text = new TextView(this);
                 text.setText(result.get(i).get(j));
                 text.setTextColor(Color.rgb(209, 89, 98));
-                text.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
+                text.setLayoutParams(new ViewGroup.LayoutParams(
+                        ViewGroup.LayoutParams.MATCH_PARENT,
+                        ViewGroup.LayoutParams.WRAP_CONTENT));
                 text.setGravity(Gravity.CENTER_HORIZONTAL);
                 badIngredientsBox.addView(text);
             }
         }
-        speechText.append(result.get(result.size() - 1));
-        speechText.append(" ");
+        speechText.append(result.get(result.size() - 1)).append(" ");
     }
 
     private void displayNegative(ArrayList<String> result) {
@@ -301,18 +268,19 @@ public class AfterCaptureActivity extends AppCompatActivity {
             TextView text = new TextView(this);
             text.setText(result.get(i));
             text.setTextColor(Color.rgb(209, 89, 98));
-            text.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
+            text.setLayoutParams(new ViewGroup.LayoutParams(
+                    ViewGroup.LayoutParams.MATCH_PARENT,
+                    ViewGroup.LayoutParams.WRAP_CONTENT));
             text.setGravity(Gravity.CENTER_HORIZONTAL);
             badIngredientsBox.addView(text);
         }
-        speechText.append(result.get(result.size() - 1));
-        speechText.append(" ");
+        speechText.append(result.get(result.size() - 1)).append(" ");
     }
 
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        Intent i = new Intent(AfterCaptureActivity.this, MainActivity.class);
+        Intent i = new Intent(this, MainActivity.class);
         i.putExtra("preferences", preferences);
         startActivity(i);
         finish();

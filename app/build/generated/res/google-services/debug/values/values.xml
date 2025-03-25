@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="gcm_defaultSenderId" translatable="false">189202070319</string>
-    <string name="google_api_key" translatable="false">AIzaSyDcbHCcIIK4jxGojaGBbDq9JLNSdmvib_A</string>
+    <string name="google_api_key" translatable="false"></string>
     <string name="google_app_id" translatable="false">1:189202070319:android:fec17a44fb107f9095ffda</string>
-    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDcbHCcIIK4jxGojaGBbDq9JLNSdmvib_A</string>
+    <string name="google_crash_reporting_api_key" translatable="false"></string>
     <string name="google_storage_bucket" translatable="false">dynamic-food-labels.firebasestorage.app</string>
     <string name="project_id" translatable="false">dynamic-food-labels</string>
 </resources>

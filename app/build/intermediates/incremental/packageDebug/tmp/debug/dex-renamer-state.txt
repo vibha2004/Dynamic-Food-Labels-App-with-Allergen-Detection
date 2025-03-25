@@ -1,4 +1,4 @@
-#Sat Mar 01 14:30:58 IST 2025
+#Tue Mar 25 12:54:13 IST 2025
 base.0=C\:\\Users\\shama\\Desktop\\Dynamic Food Labels App with Allergen Detection\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 base.1=C\:\\Users\\shama\\Desktop\\Dynamic Food Labels App with Allergen Detection\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
 base.2=C\:\\Users\\shama\\Desktop\\Dynamic Food Labels App with Allergen Detection\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\11\\classes.dex

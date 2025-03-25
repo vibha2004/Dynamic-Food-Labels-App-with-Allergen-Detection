@@ -3333,6 +3333,7 @@ id decelerate
 id decelerateAndComplete
 id decor_content_parent
 id default_activity_button
+id deleteButton
 id deltaRelative
 id dependency_ordering
 id design_bottom_sheet
@@ -3562,6 +3563,7 @@ id radio
 id ratio
 id read_text
 id rectangles
+id recyclerView
 id report_drawn
 id reverseSawtooth
 id right
@@ -3573,7 +3575,6 @@ id row_index_key
 id save_non_transition_alpha
 id save_overlay_view
 id savedItemsButton
-id savedItemsLayout
 id sawtooth
 id scale
 id screen
