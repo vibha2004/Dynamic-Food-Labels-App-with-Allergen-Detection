@@ -28,6 +28,7 @@ drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable negative
 drawable rounded_btn
+drawable rounded_btn_avni
 drawable rounded_label
 font opensans_semibold
 id AnotherPicture
@@ -49,14 +50,10 @@ id TitleText
 id Vegan
 id Vegetarian
 id Wheat
-id age
-id age_input
 id daysLeftText
 id deleteButton
 id expiryDate
 id graphicOverlay
-id height
-id height_input
 id icon
 id imageView
 id itemName
@@ -67,10 +64,7 @@ id savedItemsButton
 id set_preferences
 id tableLayout
 id textView
-id textView2
 id topLayout
-id weight
-id weight_input
 layout activity_after_capture
 layout activity_main
 layout activity_preferences

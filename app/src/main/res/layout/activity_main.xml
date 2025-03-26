@@ -39,13 +39,19 @@
             android:background="@drawable/rounded_btn"
             android:padding="10dp"
             android:text="@string/scan_ingredients"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+
+            android:drawablePadding="8dp" />
+
 
         <Button
             android:id="@+id/savedItemsButton"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:background="@drawable/rounded_btn"
             android:text="Saved Items" />
     </LinearLayout>
 

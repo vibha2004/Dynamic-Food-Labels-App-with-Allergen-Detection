@@ -3160,6 +3160,7 @@ drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable rounded_btn
+drawable rounded_btn_avni
 drawable rounded_label
 drawable test_level_drawable
 drawable tooltip_frame_dark
@@ -3258,8 +3259,6 @@ id activity_chooser_view_content
 id add
 id adjust_height
 id adjust_width
-id age
-id age_input
 id alertTitle
 id aligned
 id all
@@ -3405,8 +3404,6 @@ id group_divider
 id grouping
 id groups
 id header_title
-id height
-id height_input
 id hide_ime_id
 id hideable
 id home
@@ -3660,7 +3657,6 @@ id textSpacerNoTitle
 id textStart
 id textTop
 id textView
-id textView2
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3704,8 +3700,6 @@ id view_tree_saved_state_registry_owner
 id view_tree_view_model_store_owner
 id visible
 id visible_removing_fragment_view_tag
-id weight
-id weight_input
 id west
 id wide
 id withText
