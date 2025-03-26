@@ -1,7 +1,7 @@
 {
   "project_info": {
     "project_number": "189202070319",
-    "project_id": "dynamic-food-labels",
+  "project_id": "dynamic-food-labels",
     "storage_bucket": "dynamic-food-labels.firebasestorage.app"
   },
   "client": [
