@@ -226,18 +226,20 @@ public class AfterCaptureActivity extends AppCompatActivity {
 
         long currentTime = System.currentTimeMillis();
         long difference = expiryTime - currentTime;
+        long daysLeft = difference / ONE_DAY_IN_MILLIS;
 
-        if (difference > 7 * ONE_DAY_IN_MILLIS) {
-            expiryLabel.setText("Expiry Date: Fresh (" + expiryDate + ")");
+        if (daysLeft > 7) {
+            expiryLabel.setText("Expiry Date: " + expiryDate + " (Fresh, " + daysLeft + " days left)");
             expiryLabel.setBackgroundColor(Color.GREEN);
-        } else if (difference > 0) {
-            expiryLabel.setText("Expiry Date: Near Expiry (" + expiryDate + ")");
+        } else if (daysLeft > 0) {
+            expiryLabel.setText("Expiry Date: " + expiryDate + " (Near expiry, " + daysLeft + " days left)");
             expiryLabel.setBackgroundColor(Color.YELLOW);
         } else {
-            expiryLabel.setText("Expiry Date: Expired (" + expiryDate + ")");
+            expiryLabel.setText("Expiry Date: " + expiryDate + " (Expired)");
             expiryLabel.setBackgroundColor(Color.RED);
         }
     }
+
 
     private boolean noBadIngredients(ArrayList<ArrayList<String>> a,
                                      ArrayList<String> b,

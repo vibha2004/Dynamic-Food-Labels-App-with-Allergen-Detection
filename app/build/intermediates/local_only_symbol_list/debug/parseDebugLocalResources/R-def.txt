@@ -107,7 +107,7 @@ string parsafood_logo_descr
 string peanut_choice
 string permission_camera_rationale
 string project_id
-string scan_ingredients
+string scan
 string scan_preferences
 string seafood_choice
 string set_allergens

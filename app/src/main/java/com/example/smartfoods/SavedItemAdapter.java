@@ -133,6 +133,3 @@ public class SavedItemAdapter extends RecyclerView.Adapter<SavedItemAdapter.Save
         }
     }
 }
-
-
-

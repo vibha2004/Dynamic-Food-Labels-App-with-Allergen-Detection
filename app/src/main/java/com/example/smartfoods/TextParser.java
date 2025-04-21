@@ -204,7 +204,7 @@ public class TextParser {
                 "pike", "salmon", "snapper", "tilapia", "tuna", "trout", "fish", "crawfish", "crab", "krill",
                 "lobster", "shrimp", "mussels", "squid")));
         return returnList;
-    }
+    }   
 
     public ArrayList processInput(ArrayList<String> ingredients) {
         ArrayList<String> allIngredients = new ArrayList<>();

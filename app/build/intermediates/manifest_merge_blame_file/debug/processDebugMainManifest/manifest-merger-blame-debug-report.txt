@@ -12,222 +12,353 @@
 11-->C:\Users\shama\Desktop\Dynamic Food Labels App with Allergen Detection\app\src\main\AndroidManifest.xml:5:5-60
 11-->C:\Users\shama\Desktop\Dynamic Food Labels App with Allergen Detection\app\src\main\AndroidManifest.xml:5:19-57
 12
-13    <uses-permission android:name="android.permission.CAMERA" />
-13-->C:\Users\shama\Desktop\Dynamic Food Labels App with Allergen Detection\app\src\main\AndroidManifest.xml:7:5-65
-13-->C:\Users\shama\Desktop\Dynamic Food Labels App with Allergen Detection\app\src\main\AndroidManifest.xml:7:22-62
-14
-15    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
-16    <!-- <uses-sdk android:minSdkVersion="14" /> -->
-17    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-17-->[com.google.firebase:firebase-firestore:24.9.1] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\e9f5bd8db8e1a545db8f7fbd1e9deaee\transformed\jetified-firebase-firestore-24.9.1\AndroidManifest.xml:10:5-79
-17-->[com.google.firebase:firebase-firestore:24.9.1] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\e9f5bd8db8e1a545db8f7fbd1e9deaee\transformed\jetified-firebase-firestore-24.9.1\AndroidManifest.xml:10:22-76
-18    <uses-permission android:name="android.permission.INTERNET" />
-18-->[com.google.firebase:firebase-firestore:24.9.1] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\e9f5bd8db8e1a545db8f7fbd1e9deaee\transformed\jetified-firebase-firestore-24.9.1\AndroidManifest.xml:11:5-67
-18-->[com.google.firebase:firebase-firestore:24.9.1] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\e9f5bd8db8e1a545db8f7fbd1e9deaee\transformed\jetified-firebase-firestore-24.9.1\AndroidManifest.xml:11:22-64
-19
-20    <permission
-20-->[androidx.core:core:1.13.0] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\6f6e9fb244bef5050919b0ea16324303\transformed\core-1.13.0\AndroidManifest.xml:22:5-24:47
-21        android:name="com.example.smartfoods.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-21-->[androidx.core:core:1.13.0] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\6f6e9fb244bef5050919b0ea16324303\transformed\core-1.13.0\AndroidManifest.xml:23:9-81
-22        android:protectionLevel="signature" />
-22-->[androidx.core:core:1.13.0] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\6f6e9fb244bef5050919b0ea16324303\transformed\core-1.13.0\AndroidManifest.xml:24:9-44
-23
-24    <uses-permission android:name="com.example.smartfoods.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-24-->[androidx.core:core:1.13.0] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\6f6e9fb244bef5050919b0ea16324303\transformed\core-1.13.0\AndroidManifest.xml:26:5-97
-24-->[androidx.core:core:1.13.0] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\6f6e9fb244bef5050919b0ea16324303\transformed\core-1.13.0\AndroidManifest.xml:26:22-94
+13    <uses-permission android:name="android.permission.INTERNET" />
+13-->C:\Users\shama\Desktop\Dynamic Food Labels App with Allergen Detection\app\src\main\AndroidManifest.xml:6:5-66
+13-->C:\Users\shama\Desktop\Dynamic Food Labels App with Allergen Detection\app\src\main\AndroidManifest.xml:6:22-64
+14    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+14-->C:\Users\shama\Desktop\Dynamic Food Labels App with Allergen Detection\app\src\main\AndroidManifest.xml:7:5-76
+14-->C:\Users\shama\Desktop\Dynamic Food Labels App with Allergen Detection\app\src\main\AndroidManifest.xml:7:22-74
+15    <uses-permission android:name="android.permission.CAMERA" />
+15-->C:\Users\shama\Desktop\Dynamic Food Labels App with Allergen Detection\app\src\main\AndroidManifest.xml:9:5-65
+15-->C:\Users\shama\Desktop\Dynamic Food Labels App with Allergen Detection\app\src\main\AndroidManifest.xml:9:22-62
+16    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+16-->[com.google.firebase:firebase-messaging:23.1.2] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\6ced38ae104233963740714890254c07\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:24:5-79
+16-->[com.google.firebase:firebase-messaging:23.1.2] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\6ced38ae104233963740714890254c07\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:24:22-76
+17    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+17-->[com.google.firebase:firebase-messaging:23.1.2] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\6ced38ae104233963740714890254c07\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:26:5-68
+17-->[com.google.firebase:firebase-messaging:23.1.2] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\6ced38ae104233963740714890254c07\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:26:22-65
+18    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+18-->[com.google.firebase:firebase-messaging:23.1.2] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\6ced38ae104233963740714890254c07\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:28:5-82
+18-->[com.google.firebase:firebase-messaging:23.1.2] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\6ced38ae104233963740714890254c07\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:28:22-79
+19    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+19-->[com.google.android.gms:play-services-measurement-api:21.2.2] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\b9fb6e63a66f9ed0b0dbd821a55d76fc\transformed\jetified-play-services-measurement-api-21.2.2\AndroidManifest.xml:25:5-79
+19-->[com.google.android.gms:play-services-measurement-api:21.2.2] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\b9fb6e63a66f9ed0b0dbd821a55d76fc\transformed\jetified-play-services-measurement-api-21.2.2\AndroidManifest.xml:25:22-76
+20    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+20-->[com.google.android.gms:play-services-measurement:21.2.2] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\c2d0f90abba3a538309d212fd5e3782f\transformed\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:26:5-110
+20-->[com.google.android.gms:play-services-measurement:21.2.2] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\c2d0f90abba3a538309d212fd5e3782f\transformed\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:26:22-107
+21
+22    <permission
+22-->[androidx.core:core:1.13.0] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\6f6e9fb244bef5050919b0ea16324303\transformed\core-1.13.0\AndroidManifest.xml:22:5-24:47
+23        android:name="com.example.smartfoods.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+23-->[androidx.core:core:1.13.0] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\6f6e9fb244bef5050919b0ea16324303\transformed\core-1.13.0\AndroidManifest.xml:23:9-81
+24        android:protectionLevel="signature" />
+24-->[androidx.core:core:1.13.0] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\6f6e9fb244bef5050919b0ea16324303\transformed\core-1.13.0\AndroidManifest.xml:24:9-44
 25
-26    <application
-26-->C:\Users\shama\Desktop\Dynamic Food Labels App with Allergen Detection\app\src\main\AndroidManifest.xml:9:5-40:19
-27        android:allowBackup="true"
-27-->C:\Users\shama\Desktop\Dynamic Food Labels App with Allergen Detection\app\src\main\AndroidManifest.xml:10:9-35
-28        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-28-->[androidx.core:core:1.13.0] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\6f6e9fb244bef5050919b0ea16324303\transformed\core-1.13.0\AndroidManifest.xml:28:18-86
-29        android:debuggable="true"
-30        android:extractNativeLibs="true"
-31        android:hardwareAccelerated="false"
-31-->C:\Users\shama\Desktop\Dynamic Food Labels App with Allergen Detection\app\src\main\AndroidManifest.xml:11:9-44
-32        android:icon="@mipmap/ic_launcher"
-32-->C:\Users\shama\Desktop\Dynamic Food Labels App with Allergen Detection\app\src\main\AndroidManifest.xml:12:9-43
-33        android:label="@string/app_name"
-33-->C:\Users\shama\Desktop\Dynamic Food Labels App with Allergen Detection\app\src\main\AndroidManifest.xml:13:9-41
-34        android:roundIcon="@mipmap/ic_launcher_round"
-34-->C:\Users\shama\Desktop\Dynamic Food Labels App with Allergen Detection\app\src\main\AndroidManifest.xml:14:9-54
-35        android:supportsRtl="true"
-35-->C:\Users\shama\Desktop\Dynamic Food Labels App with Allergen Detection\app\src\main\AndroidManifest.xml:15:9-35
-36        android:testOnly="true"
-37        android:theme="@style/Theme.AppCompat.Light" >
-37-->C:\Users\shama\Desktop\Dynamic Food Labels App with Allergen Detection\app\src\main\AndroidManifest.xml:16:9-53
-38        <activity
-38-->C:\Users\shama\Desktop\Dynamic Food Labels App with Allergen Detection\app\src\main\AndroidManifest.xml:17:9-19:40
-39            android:name="com.example.smartfoods.SavedItemsActivity"
-39-->C:\Users\shama\Desktop\Dynamic Food Labels App with Allergen Detection\app\src\main\AndroidManifest.xml:18:13-47
-40            android:exported="false" />
-40-->C:\Users\shama\Desktop\Dynamic Food Labels App with Allergen Detection\app\src\main\AndroidManifest.xml:19:13-37
-41        <activity
-41-->C:\Users\shama\Desktop\Dynamic Food Labels App with Allergen Detection\app\src\main\AndroidManifest.xml:20:9-22:41
-42            android:name="com.example.smartfoods.ocr.OcrCaptureActivity"
-42-->C:\Users\shama\Desktop\Dynamic Food Labels App with Allergen Detection\app\src\main\AndroidManifest.xml:21:13-51
-43            android:label="Read Text" />
-43-->C:\Users\shama\Desktop\Dynamic Food Labels App with Allergen Detection\app\src\main\AndroidManifest.xml:22:13-38
-44        <activity android:name="com.example.smartfoods.AfterCaptureActivity" />
-44-->C:\Users\shama\Desktop\Dynamic Food Labels App with Allergen Detection\app\src\main\AndroidManifest.xml:23:9-58
-44-->C:\Users\shama\Desktop\Dynamic Food Labels App with Allergen Detection\app\src\main\AndroidManifest.xml:23:19-55
-45        <activity android:name="com.example.smartfoods.PreferencesActivity" />
-45-->C:\Users\shama\Desktop\Dynamic Food Labels App with Allergen Detection\app\src\main\AndroidManifest.xml:24:9-57
-45-->C:\Users\shama\Desktop\Dynamic Food Labels App with Allergen Detection\app\src\main\AndroidManifest.xml:24:19-54
-46
-47        <meta-data
-47-->C:\Users\shama\Desktop\Dynamic Food Labels App with Allergen Detection\app\src\main\AndroidManifest.xml:27:9-29:35
-48            android:name="com.google.android.gms.vision.DEPENDENCIES"
-48-->C:\Users\shama\Desktop\Dynamic Food Labels App with Allergen Detection\app\src\main\AndroidManifest.xml:28:13-70
-49            android:value="ocr" />
-49-->C:\Users\shama\Desktop\Dynamic Food Labels App with Allergen Detection\app\src\main\AndroidManifest.xml:29:13-32
-50
-51        <activity
-51-->C:\Users\shama\Desktop\Dynamic Food Labels App with Allergen Detection\app\src\main\AndroidManifest.xml:31:9-39:20
-52            android:name="com.example.smartfoods.MainActivity"
-52-->C:\Users\shama\Desktop\Dynamic Food Labels App with Allergen Detection\app\src\main\AndroidManifest.xml:32:13-41
-53            android:exported="true" > <!-- Required for Android 12 and higher -->
-53-->C:\Users\shama\Desktop\Dynamic Food Labels App with Allergen Detection\app\src\main\AndroidManifest.xml:33:13-36
-54            <intent-filter>
-54-->C:\Users\shama\Desktop\Dynamic Food Labels App with Allergen Detection\app\src\main\AndroidManifest.xml:34:13-38:29
-55                <action android:name="android.intent.action.MAIN" />
-55-->C:\Users\shama\Desktop\Dynamic Food Labels App with Allergen Detection\app\src\main\AndroidManifest.xml:35:17-69
-55-->C:\Users\shama\Desktop\Dynamic Food Labels App with Allergen Detection\app\src\main\AndroidManifest.xml:35:25-66
-56
-57                <category android:name="android.intent.category.LAUNCHER" />
-57-->C:\Users\shama\Desktop\Dynamic Food Labels App with Allergen Detection\app\src\main\AndroidManifest.xml:37:17-77
-57-->C:\Users\shama\Desktop\Dynamic Food Labels App with Allergen Detection\app\src\main\AndroidManifest.xml:37:27-74
-58            </intent-filter>
-59        </activity>
-60
-61        <service
-61-->[com.google.firebase:firebase-firestore:24.9.1] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\e9f5bd8db8e1a545db8f7fbd1e9deaee\transformed\jetified-firebase-firestore-24.9.1\AndroidManifest.xml:14:9-23:19
-62            android:name="com.google.firebase.components.ComponentDiscoveryService"
-62-->[com.google.firebase:firebase-firestore:24.9.1] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\e9f5bd8db8e1a545db8f7fbd1e9deaee\transformed\jetified-firebase-firestore-24.9.1\AndroidManifest.xml:15:13-84
-63            android:directBootAware="true"
-63-->[com.google.firebase:firebase-common:20.4.2] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\d31d8160cf052f266f76ef3d9885d3b6\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:32:13-43
-64            android:exported="false" >
-64-->[com.google.firebase:firebase-firestore:24.9.1] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\e9f5bd8db8e1a545db8f7fbd1e9deaee\transformed\jetified-firebase-firestore-24.9.1\AndroidManifest.xml:16:13-37
-65            <meta-data
-65-->[com.google.firebase:firebase-firestore:24.9.1] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\e9f5bd8db8e1a545db8f7fbd1e9deaee\transformed\jetified-firebase-firestore-24.9.1\AndroidManifest.xml:17:13-19:85
-66                android:name="com.google.firebase.components:com.google.firebase.firestore.FirebaseFirestoreKtxRegistrar"
-66-->[com.google.firebase:firebase-firestore:24.9.1] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\e9f5bd8db8e1a545db8f7fbd1e9deaee\transformed\jetified-firebase-firestore-24.9.1\AndroidManifest.xml:18:17-122
-67                android:value="com.google.firebase.components.ComponentRegistrar" />
-67-->[com.google.firebase:firebase-firestore:24.9.1] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\e9f5bd8db8e1a545db8f7fbd1e9deaee\transformed\jetified-firebase-firestore-24.9.1\AndroidManifest.xml:19:17-82
-68            <meta-data
-68-->[com.google.firebase:firebase-firestore:24.9.1] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\e9f5bd8db8e1a545db8f7fbd1e9deaee\transformed\jetified-firebase-firestore-24.9.1\AndroidManifest.xml:20:13-22:85
-69                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
-69-->[com.google.firebase:firebase-firestore:24.9.1] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\e9f5bd8db8e1a545db8f7fbd1e9deaee\transformed\jetified-firebase-firestore-24.9.1\AndroidManifest.xml:21:17-111
-70                android:value="com.google.firebase.components.ComponentRegistrar" />
-70-->[com.google.firebase:firebase-firestore:24.9.1] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\e9f5bd8db8e1a545db8f7fbd1e9deaee\transformed\jetified-firebase-firestore-24.9.1\AndroidManifest.xml:22:17-82
-71            <meta-data
-71-->[com.google.firebase:firebase-common-ktx:20.4.2] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\f5f1af4b9adf0e7feda31dd0b8063e44\transformed\jetified-firebase-common-ktx-20.4.2\AndroidManifest.xml:12:13-14:85
-72                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
-72-->[com.google.firebase:firebase-common-ktx:20.4.2] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\f5f1af4b9adf0e7feda31dd0b8063e44\transformed\jetified-firebase-common-ktx-20.4.2\AndroidManifest.xml:13:17-116
-73                android:value="com.google.firebase.components.ComponentRegistrar" />
-73-->[com.google.firebase:firebase-common-ktx:20.4.2] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\f5f1af4b9adf0e7feda31dd0b8063e44\transformed\jetified-firebase-common-ktx-20.4.2\AndroidManifest.xml:14:17-82
-74            <meta-data
-74-->[com.google.firebase:firebase-common:20.4.2] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\d31d8160cf052f266f76ef3d9885d3b6\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:35:13-37:85
-75                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
-75-->[com.google.firebase:firebase-common:20.4.2] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\d31d8160cf052f266f76ef3d9885d3b6\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:36:17-109
-76                android:value="com.google.firebase.components.ComponentRegistrar" />
-76-->[com.google.firebase:firebase-common:20.4.2] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\d31d8160cf052f266f76ef3d9885d3b6\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:37:17-82
-77        </service>
-78
-79        <activity
-79-->[com.google.android.gms:play-services-base:18.0.1] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\5120664a1bed9dbc76443febdc6f913a\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
-80            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-80-->[com.google.android.gms:play-services-base:18.0.1] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\5120664a1bed9dbc76443febdc6f913a\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:19-85
-81            android:exported="false"
-81-->[com.google.android.gms:play-services-base:18.0.1] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\5120664a1bed9dbc76443febdc6f913a\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:22:19-43
-82            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-82-->[com.google.android.gms:play-services-base:18.0.1] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\5120664a1bed9dbc76443febdc6f913a\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:21:19-78
-83
-84        <provider
-84-->[com.google.firebase:firebase-common:20.4.2] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\d31d8160cf052f266f76ef3d9885d3b6\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:23:9-28:39
-85            android:name="com.google.firebase.provider.FirebaseInitProvider"
-85-->[com.google.firebase:firebase-common:20.4.2] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\d31d8160cf052f266f76ef3d9885d3b6\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:24:13-77
-86            android:authorities="com.example.smartfoods.firebaseinitprovider"
-86-->[com.google.firebase:firebase-common:20.4.2] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\d31d8160cf052f266f76ef3d9885d3b6\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:25:13-72
-87            android:directBootAware="true"
-87-->[com.google.firebase:firebase-common:20.4.2] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\d31d8160cf052f266f76ef3d9885d3b6\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:26:13-43
-88            android:exported="false"
-88-->[com.google.firebase:firebase-common:20.4.2] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\d31d8160cf052f266f76ef3d9885d3b6\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:27:13-37
-89            android:initOrder="100" />
-89-->[com.google.firebase:firebase-common:20.4.2] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\d31d8160cf052f266f76ef3d9885d3b6\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:28:13-36
-90        <provider
-90-->[androidx.emoji2:emoji2:1.3.0] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\f3e75f58042f84e7ec515d9f9d4cf5aa\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
-91            android:name="androidx.startup.InitializationProvider"
-91-->[androidx.emoji2:emoji2:1.3.0] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\f3e75f58042f84e7ec515d9f9d4cf5aa\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:25:13-67
-92            android:authorities="com.example.smartfoods.androidx-startup"
-92-->[androidx.emoji2:emoji2:1.3.0] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\f3e75f58042f84e7ec515d9f9d4cf5aa\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:26:13-68
-93            android:exported="false" >
-93-->[androidx.emoji2:emoji2:1.3.0] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\f3e75f58042f84e7ec515d9f9d4cf5aa\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:27:13-37
-94            <meta-data
-94-->[androidx.emoji2:emoji2:1.3.0] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\f3e75f58042f84e7ec515d9f9d4cf5aa\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
-95                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-95-->[androidx.emoji2:emoji2:1.3.0] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\f3e75f58042f84e7ec515d9f9d4cf5aa\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:30:17-75
-96                android:value="androidx.startup" />
-96-->[androidx.emoji2:emoji2:1.3.0] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\f3e75f58042f84e7ec515d9f9d4cf5aa\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:31:17-49
-97            <meta-data
-97-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\183f2defa93fcf4ba3a74b1d1c0d244d\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
-98                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-98-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\183f2defa93fcf4ba3a74b1d1c0d244d\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
-99                android:value="androidx.startup" />
-99-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\183f2defa93fcf4ba3a74b1d1c0d244d\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
-100            <meta-data
-100-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\1d52d9979e27c70eeb533d476e5a8399\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
-101                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-101-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\1d52d9979e27c70eeb533d476e5a8399\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
-102                android:value="androidx.startup" />
-102-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\1d52d9979e27c70eeb533d476e5a8399\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
-103        </provider>
-104
-105        <meta-data
-105-->[com.google.android.gms:play-services-basement:18.1.0] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\4de84b96b35f42e02b74a578ccd10c5a\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
-106            android:name="com.google.android.gms.version"
-106-->[com.google.android.gms:play-services-basement:18.1.0] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\4de84b96b35f42e02b74a578ccd10c5a\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
-107            android:value="@integer/google_play_services_version" />
-107-->[com.google.android.gms:play-services-basement:18.1.0] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\4de84b96b35f42e02b74a578ccd10c5a\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
-108
-109        <receiver
-109-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\1d52d9979e27c70eeb533d476e5a8399\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
-110            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-110-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\1d52d9979e27c70eeb533d476e5a8399\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
-111            android:directBootAware="false"
-111-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\1d52d9979e27c70eeb533d476e5a8399\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
-112            android:enabled="true"
-112-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\1d52d9979e27c70eeb533d476e5a8399\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
-113            android:exported="true"
-113-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\1d52d9979e27c70eeb533d476e5a8399\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
-114            android:permission="android.permission.DUMP" >
-114-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\1d52d9979e27c70eeb533d476e5a8399\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
-115            <intent-filter>
-115-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\1d52d9979e27c70eeb533d476e5a8399\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
-116                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-116-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\1d52d9979e27c70eeb533d476e5a8399\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
-116-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\1d52d9979e27c70eeb533d476e5a8399\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
-117            </intent-filter>
-118            <intent-filter>
-118-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\1d52d9979e27c70eeb533d476e5a8399\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
-119                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-119-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\1d52d9979e27c70eeb533d476e5a8399\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
-119-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\1d52d9979e27c70eeb533d476e5a8399\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
-120            </intent-filter>
-121            <intent-filter>
-121-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\1d52d9979e27c70eeb533d476e5a8399\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
-122                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-122-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\1d52d9979e27c70eeb533d476e5a8399\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
-122-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\1d52d9979e27c70eeb533d476e5a8399\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
-123            </intent-filter>
-124            <intent-filter>
-124-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\1d52d9979e27c70eeb533d476e5a8399\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
-125                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-125-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\1d52d9979e27c70eeb533d476e5a8399\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
-125-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\1d52d9979e27c70eeb533d476e5a8399\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
-126            </intent-filter>
-127        </receiver>
-128    </application>
-129
-130</manifest>
+26    <uses-permission android:name="com.example.smartfoods.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+26-->[androidx.core:core:1.13.0] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\6f6e9fb244bef5050919b0ea16324303\transformed\core-1.13.0\AndroidManifest.xml:26:5-97
+26-->[androidx.core:core:1.13.0] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\6f6e9fb244bef5050919b0ea16324303\transformed\core-1.13.0\AndroidManifest.xml:26:22-94
+27
+28    <application
+28-->C:\Users\shama\Desktop\Dynamic Food Labels App with Allergen Detection\app\src\main\AndroidManifest.xml:11:5-42:19
+29        android:allowBackup="true"
+29-->C:\Users\shama\Desktop\Dynamic Food Labels App with Allergen Detection\app\src\main\AndroidManifest.xml:12:9-35
+30        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+30-->[androidx.core:core:1.13.0] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\6f6e9fb244bef5050919b0ea16324303\transformed\core-1.13.0\AndroidManifest.xml:28:18-86
+31        android:debuggable="true"
+32        android:extractNativeLibs="true"
+33        android:hardwareAccelerated="false"
+33-->C:\Users\shama\Desktop\Dynamic Food Labels App with Allergen Detection\app\src\main\AndroidManifest.xml:13:9-44
+34        android:icon="@mipmap/ic_launcher"
+34-->C:\Users\shama\Desktop\Dynamic Food Labels App with Allergen Detection\app\src\main\AndroidManifest.xml:14:9-43
+35        android:label="@string/app_name"
+35-->C:\Users\shama\Desktop\Dynamic Food Labels App with Allergen Detection\app\src\main\AndroidManifest.xml:15:9-41
+36        android:roundIcon="@mipmap/ic_launcher_round"
+36-->C:\Users\shama\Desktop\Dynamic Food Labels App with Allergen Detection\app\src\main\AndroidManifest.xml:16:9-54
+37        android:supportsRtl="true"
+37-->C:\Users\shama\Desktop\Dynamic Food Labels App with Allergen Detection\app\src\main\AndroidManifest.xml:17:9-35
+38        android:testOnly="true"
+39        android:theme="@style/Theme.AppCompat.Light" >
+39-->C:\Users\shama\Desktop\Dynamic Food Labels App with Allergen Detection\app\src\main\AndroidManifest.xml:18:9-53
+40        <activity
+40-->C:\Users\shama\Desktop\Dynamic Food Labels App with Allergen Detection\app\src\main\AndroidManifest.xml:19:9-21:40
+41            android:name="com.example.smartfoods.SavedItemsActivity"
+41-->C:\Users\shama\Desktop\Dynamic Food Labels App with Allergen Detection\app\src\main\AndroidManifest.xml:20:13-47
+42            android:exported="false" />
+42-->C:\Users\shama\Desktop\Dynamic Food Labels App with Allergen Detection\app\src\main\AndroidManifest.xml:21:13-37
+43        <activity
+43-->C:\Users\shama\Desktop\Dynamic Food Labels App with Allergen Detection\app\src\main\AndroidManifest.xml:22:9-24:41
+44            android:name="com.example.smartfoods.ocr.OcrCaptureActivity"
+44-->C:\Users\shama\Desktop\Dynamic Food Labels App with Allergen Detection\app\src\main\AndroidManifest.xml:23:13-51
+45            android:label="Read Text" />
+45-->C:\Users\shama\Desktop\Dynamic Food Labels App with Allergen Detection\app\src\main\AndroidManifest.xml:24:13-38
+46        <activity android:name="com.example.smartfoods.AfterCaptureActivity" />
+46-->C:\Users\shama\Desktop\Dynamic Food Labels App with Allergen Detection\app\src\main\AndroidManifest.xml:25:9-58
+46-->C:\Users\shama\Desktop\Dynamic Food Labels App with Allergen Detection\app\src\main\AndroidManifest.xml:25:19-55
+47        <activity android:name="com.example.smartfoods.PreferencesActivity" />
+47-->C:\Users\shama\Desktop\Dynamic Food Labels App with Allergen Detection\app\src\main\AndroidManifest.xml:26:9-57
+47-->C:\Users\shama\Desktop\Dynamic Food Labels App with Allergen Detection\app\src\main\AndroidManifest.xml:26:19-54
+48
+49        <meta-data
+49-->C:\Users\shama\Desktop\Dynamic Food Labels App with Allergen Detection\app\src\main\AndroidManifest.xml:29:9-31:35
+50            android:name="com.google.android.gms.vision.DEPENDENCIES"
+50-->C:\Users\shama\Desktop\Dynamic Food Labels App with Allergen Detection\app\src\main\AndroidManifest.xml:30:13-70
+51            android:value="ocr" />
+51-->C:\Users\shama\Desktop\Dynamic Food Labels App with Allergen Detection\app\src\main\AndroidManifest.xml:31:13-32
+52
+53        <activity
+53-->C:\Users\shama\Desktop\Dynamic Food Labels App with Allergen Detection\app\src\main\AndroidManifest.xml:33:9-41:20
+54            android:name="com.example.smartfoods.MainActivity"
+54-->C:\Users\shama\Desktop\Dynamic Food Labels App with Allergen Detection\app\src\main\AndroidManifest.xml:34:13-41
+55            android:exported="true" > <!-- Required for Android 12 and higher -->
+55-->C:\Users\shama\Desktop\Dynamic Food Labels App with Allergen Detection\app\src\main\AndroidManifest.xml:35:13-36
+56            <intent-filter>
+56-->C:\Users\shama\Desktop\Dynamic Food Labels App with Allergen Detection\app\src\main\AndroidManifest.xml:36:13-40:29
+57                <action android:name="android.intent.action.MAIN" />
+57-->C:\Users\shama\Desktop\Dynamic Food Labels App with Allergen Detection\app\src\main\AndroidManifest.xml:37:17-69
+57-->C:\Users\shama\Desktop\Dynamic Food Labels App with Allergen Detection\app\src\main\AndroidManifest.xml:37:25-66
+58
+59                <category android:name="android.intent.category.LAUNCHER" />
+59-->C:\Users\shama\Desktop\Dynamic Food Labels App with Allergen Detection\app\src\main\AndroidManifest.xml:39:17-77
+59-->C:\Users\shama\Desktop\Dynamic Food Labels App with Allergen Detection\app\src\main\AndroidManifest.xml:39:27-74
+60            </intent-filter>
+61        </activity>
+62
+63        <receiver
+63-->[com.google.firebase:firebase-messaging:23.1.2] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\6ced38ae104233963740714890254c07\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:31:9-38:20
+64            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+64-->[com.google.firebase:firebase-messaging:23.1.2] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\6ced38ae104233963740714890254c07\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:32:13-78
+65            android:exported="true"
+65-->[com.google.firebase:firebase-messaging:23.1.2] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\6ced38ae104233963740714890254c07\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:33:13-36
+66            android:permission="com.google.android.c2dm.permission.SEND" >
+66-->[com.google.firebase:firebase-messaging:23.1.2] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\6ced38ae104233963740714890254c07\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:34:13-73
+67            <intent-filter>
+67-->[com.google.firebase:firebase-messaging:23.1.2] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\6ced38ae104233963740714890254c07\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:35:13-37:29
+68                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+68-->[com.google.firebase:firebase-messaging:23.1.2] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\6ced38ae104233963740714890254c07\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:36:17-81
+68-->[com.google.firebase:firebase-messaging:23.1.2] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\6ced38ae104233963740714890254c07\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:36:25-78
+69            </intent-filter>
+70        </receiver>
+71        <!--
+72             FirebaseMessagingService performs security checks at runtime,
+73             but set to not exported to explicitly avoid allowing another app to call it.
+74        -->
+75        <service
+75-->[com.google.firebase:firebase-messaging:23.1.2] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\6ced38ae104233963740714890254c07\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:44:9-51:19
+76            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+76-->[com.google.firebase:firebase-messaging:23.1.2] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\6ced38ae104233963740714890254c07\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:45:13-82
+77            android:directBootAware="true"
+77-->[com.google.firebase:firebase-messaging:23.1.2] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\6ced38ae104233963740714890254c07\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:46:13-43
+78            android:exported="false" >
+78-->[com.google.firebase:firebase-messaging:23.1.2] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\6ced38ae104233963740714890254c07\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:47:13-37
+79            <intent-filter android:priority="-500" >
+79-->[com.google.firebase:firebase-messaging:23.1.2] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\6ced38ae104233963740714890254c07\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:48:13-50:29
+79-->[com.google.firebase:firebase-messaging:23.1.2] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\6ced38ae104233963740714890254c07\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:48:28-51
+80                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+80-->[com.google.firebase:firebase-messaging:23.1.2] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\6ced38ae104233963740714890254c07\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:49:17-78
+80-->[com.google.firebase:firebase-messaging:23.1.2] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\6ced38ae104233963740714890254c07\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:49:25-75
+81            </intent-filter>
+82        </service>
+83        <service
+83-->[com.google.firebase:firebase-messaging:23.1.2] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\6ced38ae104233963740714890254c07\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:52:9-58:19
+84            android:name="com.google.firebase.components.ComponentDiscoveryService"
+84-->[com.google.firebase:firebase-messaging:23.1.2] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\6ced38ae104233963740714890254c07\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:53:13-84
+85            android:directBootAware="true"
+85-->[com.google.firebase:firebase-common:20.4.2] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\d31d8160cf052f266f76ef3d9885d3b6\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:32:13-43
+86            android:exported="false" >
+86-->[com.google.firebase:firebase-messaging:23.1.2] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\6ced38ae104233963740714890254c07\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:54:13-37
+87            <meta-data
+87-->[com.google.firebase:firebase-messaging:23.1.2] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\6ced38ae104233963740714890254c07\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:55:13-57:85
+88                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+88-->[com.google.firebase:firebase-messaging:23.1.2] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\6ced38ae104233963740714890254c07\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:56:17-119
+89                android:value="com.google.firebase.components.ComponentRegistrar" />
+89-->[com.google.firebase:firebase-messaging:23.1.2] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\6ced38ae104233963740714890254c07\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:57:17-82
+90            <meta-data
+90-->[com.google.firebase:firebase-firestore:24.9.1] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\e9f5bd8db8e1a545db8f7fbd1e9deaee\transformed\jetified-firebase-firestore-24.9.1\AndroidManifest.xml:17:13-19:85
+91                android:name="com.google.firebase.components:com.google.firebase.firestore.FirebaseFirestoreKtxRegistrar"
+91-->[com.google.firebase:firebase-firestore:24.9.1] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\e9f5bd8db8e1a545db8f7fbd1e9deaee\transformed\jetified-firebase-firestore-24.9.1\AndroidManifest.xml:18:17-122
+92                android:value="com.google.firebase.components.ComponentRegistrar" />
+92-->[com.google.firebase:firebase-firestore:24.9.1] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\e9f5bd8db8e1a545db8f7fbd1e9deaee\transformed\jetified-firebase-firestore-24.9.1\AndroidManifest.xml:19:17-82
+93            <meta-data
+93-->[com.google.firebase:firebase-firestore:24.9.1] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\e9f5bd8db8e1a545db8f7fbd1e9deaee\transformed\jetified-firebase-firestore-24.9.1\AndroidManifest.xml:20:13-22:85
+94                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+94-->[com.google.firebase:firebase-firestore:24.9.1] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\e9f5bd8db8e1a545db8f7fbd1e9deaee\transformed\jetified-firebase-firestore-24.9.1\AndroidManifest.xml:21:17-111
+95                android:value="com.google.firebase.components.ComponentRegistrar" />
+95-->[com.google.firebase:firebase-firestore:24.9.1] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\e9f5bd8db8e1a545db8f7fbd1e9deaee\transformed\jetified-firebase-firestore-24.9.1\AndroidManifest.xml:22:17-82
+96            <meta-data
+96-->[com.google.firebase:firebase-common-ktx:20.4.2] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\f5f1af4b9adf0e7feda31dd0b8063e44\transformed\jetified-firebase-common-ktx-20.4.2\AndroidManifest.xml:12:13-14:85
+97                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+97-->[com.google.firebase:firebase-common-ktx:20.4.2] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\f5f1af4b9adf0e7feda31dd0b8063e44\transformed\jetified-firebase-common-ktx-20.4.2\AndroidManifest.xml:13:17-116
+98                android:value="com.google.firebase.components.ComponentRegistrar" />
+98-->[com.google.firebase:firebase-common-ktx:20.4.2] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\f5f1af4b9adf0e7feda31dd0b8063e44\transformed\jetified-firebase-common-ktx-20.4.2\AndroidManifest.xml:14:17-82
+99            <meta-data
+99-->[com.google.android.gms:play-services-measurement-api:21.2.2] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\b9fb6e63a66f9ed0b0dbd821a55d76fc\transformed\jetified-play-services-measurement-api-21.2.2\AndroidManifest.xml:31:13-33:85
+100                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+100-->[com.google.android.gms:play-services-measurement-api:21.2.2] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\b9fb6e63a66f9ed0b0dbd821a55d76fc\transformed\jetified-play-services-measurement-api-21.2.2\AndroidManifest.xml:32:17-139
+101                android:value="com.google.firebase.components.ComponentRegistrar" />
+101-->[com.google.android.gms:play-services-measurement-api:21.2.2] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\b9fb6e63a66f9ed0b0dbd821a55d76fc\transformed\jetified-play-services-measurement-api-21.2.2\AndroidManifest.xml:33:17-82
+102            <meta-data
+102-->[com.google.firebase:firebase-datatransport:18.1.7] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\22168dafa65c05ffb3683d31476e9953\transformed\jetified-firebase-datatransport-18.1.7\AndroidManifest.xml:27:13-29:85
+103                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+103-->[com.google.firebase:firebase-datatransport:18.1.7] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\22168dafa65c05ffb3683d31476e9953\transformed\jetified-firebase-datatransport-18.1.7\AndroidManifest.xml:28:17-115
+104                android:value="com.google.firebase.components.ComponentRegistrar" />
+104-->[com.google.firebase:firebase-datatransport:18.1.7] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\22168dafa65c05ffb3683d31476e9953\transformed\jetified-firebase-datatransport-18.1.7\AndroidManifest.xml:29:17-82
+105            <meta-data
+105-->[com.google.firebase:firebase-installations:17.1.3] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\f5dd14d1dc139fe8327a2d47bbfd0adc\transformed\jetified-firebase-installations-17.1.3\AndroidManifest.xml:17:13-19:85
+106                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+106-->[com.google.firebase:firebase-installations:17.1.3] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\f5dd14d1dc139fe8327a2d47bbfd0adc\transformed\jetified-firebase-installations-17.1.3\AndroidManifest.xml:18:17-127
+107                android:value="com.google.firebase.components.ComponentRegistrar" />
+107-->[com.google.firebase:firebase-installations:17.1.3] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\f5dd14d1dc139fe8327a2d47bbfd0adc\transformed\jetified-firebase-installations-17.1.3\AndroidManifest.xml:19:17-82
+108            <meta-data
+108-->[com.google.firebase:firebase-common:20.4.2] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\d31d8160cf052f266f76ef3d9885d3b6\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:35:13-37:85
+109                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+109-->[com.google.firebase:firebase-common:20.4.2] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\d31d8160cf052f266f76ef3d9885d3b6\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:36:17-109
+110                android:value="com.google.firebase.components.ComponentRegistrar" />
+110-->[com.google.firebase:firebase-common:20.4.2] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\d31d8160cf052f266f76ef3d9885d3b6\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:37:17-82
+111        </service>
+112
+113        <activity
+113-->[com.google.android.gms:play-services-base:18.0.1] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\5120664a1bed9dbc76443febdc6f913a\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+114            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+114-->[com.google.android.gms:play-services-base:18.0.1] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\5120664a1bed9dbc76443febdc6f913a\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+115            android:exported="false"
+115-->[com.google.android.gms:play-services-base:18.0.1] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\5120664a1bed9dbc76443febdc6f913a\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+116            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+116-->[com.google.android.gms:play-services-base:18.0.1] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\5120664a1bed9dbc76443febdc6f913a\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+117
+118        <provider
+118-->[com.google.firebase:firebase-common:20.4.2] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\d31d8160cf052f266f76ef3d9885d3b6\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:23:9-28:39
+119            android:name="com.google.firebase.provider.FirebaseInitProvider"
+119-->[com.google.firebase:firebase-common:20.4.2] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\d31d8160cf052f266f76ef3d9885d3b6\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:24:13-77
+120            android:authorities="com.example.smartfoods.firebaseinitprovider"
+120-->[com.google.firebase:firebase-common:20.4.2] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\d31d8160cf052f266f76ef3d9885d3b6\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:25:13-72
+121            android:directBootAware="true"
+121-->[com.google.firebase:firebase-common:20.4.2] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\d31d8160cf052f266f76ef3d9885d3b6\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:26:13-43
+122            android:exported="false"
+122-->[com.google.firebase:firebase-common:20.4.2] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\d31d8160cf052f266f76ef3d9885d3b6\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:27:13-37
+123            android:initOrder="100" />
+123-->[com.google.firebase:firebase-common:20.4.2] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\d31d8160cf052f266f76ef3d9885d3b6\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:28:13-36
+124
+125        <receiver
+125-->[com.google.android.gms:play-services-measurement:21.2.2] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\c2d0f90abba3a538309d212fd5e3782f\transformed\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:29:9-33:20
+126            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+126-->[com.google.android.gms:play-services-measurement:21.2.2] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\c2d0f90abba3a538309d212fd5e3782f\transformed\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:30:13-85
+127            android:enabled="true"
+127-->[com.google.android.gms:play-services-measurement:21.2.2] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\c2d0f90abba3a538309d212fd5e3782f\transformed\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:31:13-35
+128            android:exported="false" >
+128-->[com.google.android.gms:play-services-measurement:21.2.2] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\c2d0f90abba3a538309d212fd5e3782f\transformed\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:32:13-37
+129        </receiver>
+130
+131        <service
+131-->[com.google.android.gms:play-services-measurement:21.2.2] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\c2d0f90abba3a538309d212fd5e3782f\transformed\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:35:9-38:40
+132            android:name="com.google.android.gms.measurement.AppMeasurementService"
+132-->[com.google.android.gms:play-services-measurement:21.2.2] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\c2d0f90abba3a538309d212fd5e3782f\transformed\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:36:13-84
+133            android:enabled="true"
+133-->[com.google.android.gms:play-services-measurement:21.2.2] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\c2d0f90abba3a538309d212fd5e3782f\transformed\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:37:13-35
+134            android:exported="false" />
+134-->[com.google.android.gms:play-services-measurement:21.2.2] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\c2d0f90abba3a538309d212fd5e3782f\transformed\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:38:13-37
+135        <service
+135-->[com.google.android.gms:play-services-measurement:21.2.2] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\c2d0f90abba3a538309d212fd5e3782f\transformed\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:39:9-43:72
+136            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+136-->[com.google.android.gms:play-services-measurement:21.2.2] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\c2d0f90abba3a538309d212fd5e3782f\transformed\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:40:13-87
+137            android:enabled="true"
+137-->[com.google.android.gms:play-services-measurement:21.2.2] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\c2d0f90abba3a538309d212fd5e3782f\transformed\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:41:13-35
+138            android:exported="false"
+138-->[com.google.android.gms:play-services-measurement:21.2.2] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\c2d0f90abba3a538309d212fd5e3782f\transformed\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:42:13-37
+139            android:permission="android.permission.BIND_JOB_SERVICE" />
+139-->[com.google.android.gms:play-services-measurement:21.2.2] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\c2d0f90abba3a538309d212fd5e3782f\transformed\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:43:13-69
+140
+141        <provider
+141-->[androidx.emoji2:emoji2:1.3.0] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\f3e75f58042f84e7ec515d9f9d4cf5aa\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+142            android:name="androidx.startup.InitializationProvider"
+142-->[androidx.emoji2:emoji2:1.3.0] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\f3e75f58042f84e7ec515d9f9d4cf5aa\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:25:13-67
+143            android:authorities="com.example.smartfoods.androidx-startup"
+143-->[androidx.emoji2:emoji2:1.3.0] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\f3e75f58042f84e7ec515d9f9d4cf5aa\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:26:13-68
+144            android:exported="false" >
+144-->[androidx.emoji2:emoji2:1.3.0] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\f3e75f58042f84e7ec515d9f9d4cf5aa\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:27:13-37
+145            <meta-data
+145-->[androidx.emoji2:emoji2:1.3.0] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\f3e75f58042f84e7ec515d9f9d4cf5aa\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+146                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+146-->[androidx.emoji2:emoji2:1.3.0] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\f3e75f58042f84e7ec515d9f9d4cf5aa\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:30:17-75
+147                android:value="androidx.startup" />
+147-->[androidx.emoji2:emoji2:1.3.0] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\f3e75f58042f84e7ec515d9f9d4cf5aa\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:31:17-49
+148            <meta-data
+148-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\183f2defa93fcf4ba3a74b1d1c0d244d\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
+149                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+149-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\183f2defa93fcf4ba3a74b1d1c0d244d\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
+150                android:value="androidx.startup" />
+150-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\183f2defa93fcf4ba3a74b1d1c0d244d\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
+151            <meta-data
+151-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\1d52d9979e27c70eeb533d476e5a8399\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+152                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+152-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\1d52d9979e27c70eeb533d476e5a8399\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+153                android:value="androidx.startup" />
+153-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\1d52d9979e27c70eeb533d476e5a8399\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+154        </provider>
+155
+156        <meta-data
+156-->[com.google.android.gms:play-services-basement:18.1.0] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\4de84b96b35f42e02b74a578ccd10c5a\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+157            android:name="com.google.android.gms.version"
+157-->[com.google.android.gms:play-services-basement:18.1.0] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\4de84b96b35f42e02b74a578ccd10c5a\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+158            android:value="@integer/google_play_services_version" />
+158-->[com.google.android.gms:play-services-basement:18.1.0] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\4de84b96b35f42e02b74a578ccd10c5a\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+159
+160        <receiver
+160-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\1d52d9979e27c70eeb533d476e5a8399\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+161            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+161-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\1d52d9979e27c70eeb533d476e5a8399\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+162            android:directBootAware="false"
+162-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\1d52d9979e27c70eeb533d476e5a8399\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+163            android:enabled="true"
+163-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\1d52d9979e27c70eeb533d476e5a8399\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+164            android:exported="true"
+164-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\1d52d9979e27c70eeb533d476e5a8399\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+165            android:permission="android.permission.DUMP" >
+165-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\1d52d9979e27c70eeb533d476e5a8399\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+166            <intent-filter>
+166-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\1d52d9979e27c70eeb533d476e5a8399\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+167                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+167-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\1d52d9979e27c70eeb533d476e5a8399\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+167-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\1d52d9979e27c70eeb533d476e5a8399\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+168            </intent-filter>
+169            <intent-filter>
+169-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\1d52d9979e27c70eeb533d476e5a8399\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+170                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+170-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\1d52d9979e27c70eeb533d476e5a8399\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+170-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\1d52d9979e27c70eeb533d476e5a8399\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+171            </intent-filter>
+172            <intent-filter>
+172-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\1d52d9979e27c70eeb533d476e5a8399\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+173                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+173-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\1d52d9979e27c70eeb533d476e5a8399\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+173-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\1d52d9979e27c70eeb533d476e5a8399\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+174            </intent-filter>
+175            <intent-filter>
+175-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\1d52d9979e27c70eeb533d476e5a8399\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+176                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+176-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\1d52d9979e27c70eeb533d476e5a8399\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+176-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\1d52d9979e27c70eeb533d476e5a8399\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+177            </intent-filter>
+178        </receiver>
+179
+180        <service
+180-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\70f892f865fdb847ab8c2a1dc383c028\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:28:9-34:19
+181            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+181-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\70f892f865fdb847ab8c2a1dc383c028\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:29:13-103
+182            android:exported="false" >
+182-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\70f892f865fdb847ab8c2a1dc383c028\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:30:13-37
+183            <meta-data
+183-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\70f892f865fdb847ab8c2a1dc383c028\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:31:13-33:39
+184                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+184-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\70f892f865fdb847ab8c2a1dc383c028\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:32:17-94
+185                android:value="cct" />
+185-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\70f892f865fdb847ab8c2a1dc383c028\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:33:17-36
+186        </service>
+187        <service
+187-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\e92d992e1420aad9d255f8b108f4652e\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:26:9-30:19
+188            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+188-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\e92d992e1420aad9d255f8b108f4652e\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:27:13-117
+189            android:exported="false"
+189-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\e92d992e1420aad9d255f8b108f4652e\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:28:13-37
+190            android:permission="android.permission.BIND_JOB_SERVICE" >
+190-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\e92d992e1420aad9d255f8b108f4652e\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:29:13-69
+191        </service>
+192
+193        <receiver
+193-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\e92d992e1420aad9d255f8b108f4652e\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:32:9-34:40
+194            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+194-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\e92d992e1420aad9d255f8b108f4652e\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:33:13-132
+195            android:exported="false" />
+195-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\allergen\IngredientsScanner\gradle\caches\transforms-4\e92d992e1420aad9d255f8b108f4652e\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:34:13-37
+196    </application>
+197
+198</manifest>

@@ -38,7 +38,7 @@
             android:textColor="@color/white"
             android:background="@drawable/rounded_btn"
             android:padding="10dp"
-            android:text="@string/scan_ingredients"
+            android:text="@string/scan"
             android:textSize="20sp"
 
             android:drawablePadding="8dp" />
