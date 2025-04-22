@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Peanut Shape -->
+    <path
+        android:fillColor="#FF9800"
+        android:pathData="M14.5,2c-1.93,0 -3.5,1.57 -3.5,3.5v1c0,0.35 0.06,0.69 0.16,1H11c-1.66,0 -3,1.34 -3,3v2c0,1.66 1.34,3 3,3h1.66c-0.1,0.31 -0.16,0.65 -0.16,1v1c0,1.93 1.57,3.5 3.5,3.5S18,18.43 18,16.5v-1c0,-0.35 -0.06,-0.69 -0.16,-1H17c1.66,0 3,-1.34 3,-3v-2c0,-1.66 -1.34,-3 -3,-3h-1.66c0.1,-0.31 0.16,-0.65 0.16,-1v-1c0,-1.93 -1.57,-3.5 -3.5,-3.5z" />
+
+    <!-- Cross Slash -->
+    <path
+        android:fillColor="#D32F2F"
+        android:strokeWidth="1"
+        android:pathData="M3,3 L21,21"
+        android:strokeColor="#D32F2F" />
+</vector>

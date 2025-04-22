@@ -8,6 +8,10 @@
         "source": "C:\\allergen\\IngredientsScanner\\gradle\\daemon\\8.7\\com.example.smartfoods.app-main-7:\\mipmap-xxxhdpi\\ic_launcher_round.png"
     },
     {
+        "merged": "C:\\allergen\\IngredientsScanner\\gradle\\daemon\\8.7\\com.example.smartfoods.app-debug-5:\\drawable_ic_tts.xml.flat",
+        "source": "C:\\allergen\\IngredientsScanner\\gradle\\daemon\\8.7\\com.example.smartfoods.app-main-7:\\drawable\\ic_tts.xml"
+    },
+    {
         "merged": "C:\\allergen\\IngredientsScanner\\gradle\\daemon\\8.7\\com.example.smartfoods.app-debug-5:\\drawable_ic_launcher_background.xml.flat",
         "source": "C:\\allergen\\IngredientsScanner\\gradle\\daemon\\8.7\\com.example.smartfoods.app-main-7:\\drawable\\ic_launcher_background.xml"
     },
@@ -16,12 +20,12 @@
         "source": "C:\\allergen\\IngredientsScanner\\gradle\\daemon\\8.7\\com.example.smartfoods.app-main-7:\\mipmap-hdpi\\check.png"
     },
     {
-        "merged": "C:\\allergen\\IngredientsScanner\\gradle\\daemon\\8.7\\com.example.smartfoods.app-debug-5:\\mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "C:\\allergen\\IngredientsScanner\\gradle\\daemon\\8.7\\com.example.smartfoods.app-main-7:\\mipmap-xxhdpi\\ic_launcher.png"
-    },
-    {
         "merged": "C:\\allergen\\IngredientsScanner\\gradle\\daemon\\8.7\\com.example.smartfoods.app-debug-5:\\mipmap-hdpi_negative_round.png.flat",
         "source": "C:\\allergen\\IngredientsScanner\\gradle\\daemon\\8.7\\com.example.smartfoods.app-main-7:\\mipmap-hdpi\\negative_round.png"
+    },
+    {
+        "merged": "C:\\allergen\\IngredientsScanner\\gradle\\daemon\\8.7\\com.example.smartfoods.app-debug-5:\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\allergen\\IngredientsScanner\\gradle\\daemon\\8.7\\com.example.smartfoods.app-main-7:\\mipmap-xxhdpi\\ic_launcher.png"
     },
     {
         "merged": "C:\\allergen\\IngredientsScanner\\gradle\\daemon\\8.7\\com.example.smartfoods.app-debug-5:\\mipmap-mdpi_negative.png.flat",
@@ -60,10 +64,6 @@
         "source": "C:\\allergen\\IngredientsScanner\\gradle\\daemon\\8.7\\com.example.smartfoods.app-main-7:\\mipmap-xxhdpi\\bg1.png"
     },
     {
-        "merged": "com.example.smartfoods.app-debug-5:/layout_activity_main.xml.flat",
-        "source": "com.example.smartfoods.app-main-7:/layout/activity_main.xml"
-    },
-    {
         "merged": "C:\\allergen\\IngredientsScanner\\gradle\\daemon\\8.7\\com.example.smartfoods.app-debug-5:\\mipmap-mdpi_negative_round.png.flat",
         "source": "C:\\allergen\\IngredientsScanner\\gradle\\daemon\\8.7\\com.example.smartfoods.app-main-7:\\mipmap-mdpi\\negative_round.png"
     },
@@ -96,8 +96,16 @@
         "source": "C:\\allergen\\IngredientsScanner\\gradle\\daemon\\8.7\\com.example.smartfoods.app-main-7:\\mipmap-xhdpi\\bg1.png"
     },
     {
+        "merged": "C:\\allergen\\IngredientsScanner\\gradle\\daemon\\8.7\\com.example.smartfoods.app-debug-5:\\drawable_ic_food_type.xml.flat",
+        "source": "C:\\allergen\\IngredientsScanner\\gradle\\daemon\\8.7\\com.example.smartfoods.app-main-7:\\drawable\\ic_food_type.xml"
+    },
+    {
         "merged": "C:\\allergen\\IngredientsScanner\\gradle\\daemon\\8.7\\com.example.smartfoods.app-debug-5:\\drawable_rounded_btn.xml.flat",
         "source": "C:\\allergen\\IngredientsScanner\\gradle\\daemon\\8.7\\com.example.smartfoods.app-main-7:\\drawable\\rounded_btn.xml"
+    },
+    {
+        "merged": "com.example.smartfoods.app-debug-5:/layout_activity_after_capture.xml.flat",
+        "source": "com.example.smartfoods.app-main-7:/layout/activity_after_capture.xml"
     },
     {
         "merged": "C:\\allergen\\IngredientsScanner\\gradle\\daemon\\8.7\\com.example.smartfoods.app-debug-5:\\layout_activity_main.xml.flat",
@@ -160,6 +168,10 @@
         "source": "C:\\allergen\\IngredientsScanner\\gradle\\daemon\\8.7\\com.example.smartfoods.app-main-7:\\mipmap-xhdpi\\ic_launcher_round.png"
     },
     {
+        "merged": "C:\\allergen\\IngredientsScanner\\gradle\\daemon\\8.7\\com.example.smartfoods.app-debug-5:\\drawable_ic_save.xml.flat",
+        "source": "C:\\allergen\\IngredientsScanner\\gradle\\daemon\\8.7\\com.example.smartfoods.app-main-7:\\drawable\\ic_save.xml"
+    },
+    {
         "merged": "C:\\allergen\\IngredientsScanner\\gradle\\daemon\\8.7\\com.example.smartfoods.app-debug-5:\\mipmap-xxxhdpi_bg_round.png.flat",
         "source": "C:\\allergen\\IngredientsScanner\\gradle\\daemon\\8.7\\com.example.smartfoods.app-main-7:\\mipmap-xxxhdpi\\bg_round.png"
     },
@@ -220,6 +232,10 @@
         "source": "C:\\allergen\\IngredientsScanner\\gradle\\daemon\\8.7\\com.example.smartfoods.app-main-7:\\mipmap-mdpi\\bg_round.png"
     },
     {
+        "merged": "C:\\allergen\\IngredientsScanner\\gradle\\daemon\\8.7\\com.example.smartfoods.app-debug-5:\\drawable_ic_nova.xml.flat",
+        "source": "C:\\allergen\\IngredientsScanner\\gradle\\daemon\\8.7\\com.example.smartfoods.app-main-7:\\drawable\\ic_nova.xml"
+    },
+    {
         "merged": "C:\\allergen\\IngredientsScanner\\gradle\\daemon\\8.7\\com.example.smartfoods.app-debug-5:\\drawable_rounded_label.xml.flat",
         "source": "C:\\allergen\\IngredientsScanner\\gradle\\daemon\\8.7\\com.example.smartfoods.app-main-7:\\drawable\\rounded_label.xml"
     },
@@ -252,6 +268,10 @@
         "source": "C:\\allergen\\IngredientsScanner\\gradle\\daemon\\8.7\\com.example.smartfoods.app-main-7:\\mipmap-anydpi-v26\\negative_round.xml"
     },
     {
+        "merged": "C:\\allergen\\IngredientsScanner\\gradle\\daemon\\8.7\\com.example.smartfoods.app-debug-5:\\drawable_ic_allergens.xml.flat",
+        "source": "C:\\allergen\\IngredientsScanner\\gradle\\daemon\\8.7\\com.example.smartfoods.app-main-7:\\drawable\\ic_allergens.xml"
+    },
+    {
         "merged": "C:\\allergen\\IngredientsScanner\\gradle\\daemon\\8.7\\com.example.smartfoods.app-debug-5:\\drawable_rounded_btn_avni.xml.flat",
         "source": "C:\\allergen\\IngredientsScanner\\gradle\\daemon\\8.7\\com.example.smartfoods.app-main-7:\\drawable\\rounded_btn_avni.xml"
     },
@@ -264,12 +284,20 @@
         "source": "C:\\allergen\\IngredientsScanner\\gradle\\daemon\\8.7\\com.example.smartfoods.app-main-7:\\mipmap-hdpi\\ic_launcher.png"
     },
     {
+        "merged": "C:\\allergen\\IngredientsScanner\\gradle\\daemon\\8.7\\com.example.smartfoods.app-debug-5:\\drawable_ic_expiry.xml.flat",
+        "source": "C:\\allergen\\IngredientsScanner\\gradle\\daemon\\8.7\\com.example.smartfoods.app-main-7:\\drawable\\ic_expiry.xml"
+    },
+    {
         "merged": "C:\\allergen\\IngredientsScanner\\gradle\\daemon\\8.7\\com.example.smartfoods.app-debug-5:\\mipmap-xxhdpi_check.png.flat",
         "source": "C:\\allergen\\IngredientsScanner\\gradle\\daemon\\8.7\\com.example.smartfoods.app-main-7:\\mipmap-xxhdpi\\check.png"
     },
     {
         "merged": "C:\\allergen\\IngredientsScanner\\gradle\\daemon\\8.7\\com.example.smartfoods.app-debug-5:\\mipmap-mdpi_ic_launcher_round.png.flat",
         "source": "C:\\allergen\\IngredientsScanner\\gradle\\daemon\\8.7\\com.example.smartfoods.app-main-7:\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\allergen\\IngredientsScanner\\gradle\\daemon\\8.7\\com.example.smartfoods.app-debug-5:\\drawable_ic_sweetener.xml.flat",
+        "source": "C:\\allergen\\IngredientsScanner\\gradle\\daemon\\8.7\\com.example.smartfoods.app-main-7:\\drawable\\ic_sweetener.xml"
     },
     {
         "merged": "C:\\allergen\\IngredientsScanner\\gradle\\daemon\\8.7\\com.example.smartfoods.app-debug-5:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",

@@ -1,25 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Primary Brand Colors -->
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+    <!-- Add these inside your <resources> tag -->
 
-    <item name="blue" type="color">#FF33B5E5</item>
-    <item name="purple" type="color">#FFAA66CC</item>
-    <item name="green" type="color">#FF99CC00</item>
-    <item name="orange" type="color">#FFFFBB33</item>
-    <item name="red" type="color">#FFFF4444</item>
-    <item name="darkblue" type="color">#FF0099CC</item>
-    <item name="darkpurple" type="color">#FF9933CC</item>
-    <item name="darkgreen" type="color">#FF669900</item>
-    <item name="darkorange" type="color">#FFFF8800</item>
-    <item name="darkred" type="color">#FFCC0000</item>
-    <item name="parsapurple" type="color">#513f3f</item>
-    <item name="parsayellow" type="color">#8f5e00</item>
-    <item name="brown" type="color">#49311c</item>
-    <item name="check_green" type="color">#0b8d00</item>
-    <item name="white" type="color">#ffffff</item>
+    <color name="green_primary">#4CAF50</color>
 
+    <!-- Status Colors -->
+    <color name="status_safe">#0b8d00</color>
+    <color name="status_warning">#FFBB33</color>
+    <color name="status_danger">#FF4444</color>
+    <color name="status_info">#33B5E5</color>
+
+    <!-- Food Health Indicators -->
+    <color name="health_excellent">#4CAF50</color>
+    <color name="health_good">#8BC34A</color>
+    <color name="health_fair">#FFC107</color>
+    <color name="health_poor">#FF9800</color>
+    <color name="health_bad">#F44336</color>
+
+    <!-- NOVA Category Colors -->
+    <color name="nova1">#4CAF50</color>
+    <color name="nova2">#8BC34A</color>
+    <color name="nova3">#FFC107</color>
+    <color name="nova4">#F44336</color>
+
+    <!-- Background & Surface Colors -->
+    <color name="background_light">#FAFAFA</color>
+    <color name="background_dark">#303030</color>
+    <color name="surface_light">#FFFFFF</color>
+    <color name="surface_dark">#424242</color>
+    <color name="light_gray_background">#F0F0F0</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+    <color name="text_tertiary">#BDBDBD</color>
+    <color name="text_on_primary">#FFFFFF</color>
+    <color name="text_on_dark">#FFFFFF</color>
+
+    <!-- Legacy Colors -->
+    <color name="blue">#FF33B5E5</color>
+    <color name="purple">#FFAA66CC</color>
+    <color name="green">#FF99CC00</color>
+    <color name="orange">#FFFFBB33</color>
+    <color name="red">#FFFF4444</color>
+    <color name="darkblue">#FF0099CC</color>
+    <color name="darkpurple">#FF9933CC</color>
+    <color name="darkgreen">#FF669900</color>
+    <color name="darkorange">#FFFF8800</color>
+    <color name="darkred">#FFCC0000</color>
+    <color name="parsapurple">#513f3f</color>
+    <color name="parsayellow">#8f5e00</color>
+    <color name="brown">#49311c</color>
+    <color name="white">#FFFFFF</color>
+
+    <!-- Android Colors Array -->
     <integer-array name="androidcolors">
         <item>@color/blue</item>
         <item>@color/purple</item>
@@ -34,8 +72,15 @@
         <item>@color/parsapurple</item>
         <item>@color/parsayellow</item>
         <item>@color/brown</item>
-        <item>@color/check_green</item>
+        <item>@color/status_safe</item>
     </integer-array>
 
-
+    <!-- Food Category Colors -->
+    <color name="category_dairy">#FFECB3</color>
+    <color name="category_meat">#EF9A9A</color>
+    <color name="category_vegetable">#C5E1A5</color>
+    <color name="category_fruit">#CE93D8</color>
+    <color name="category_grain">#D7CCC8</color>
+    <color name="category_sweetener">#B39DDB</color>
+    <color name="category_additive">#9FA8DA</color>
 </resources>
