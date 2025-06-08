@@ -3,7 +3,6 @@
 [![Android](https://img.shields.io/badge/Android-5.0+-green.svg?logo=android)](https://android.com)
 [![Java](https://img.shields.io/badge/Java-8+-blue.svg?logo=java)](https://java.com)
 [![ML Kit](https://img.shields.io/badge/ML_Kit-OCR-orange.svg?logo=google)](https://developers.google.com/ml-kit)
-[![TensorFlow](https://img.shields.io/badge/TensorFlow-Lite-orange.svg?logo=tensorflow)](https://tensorflow.org/lite)
 
 > An innovative Android application designed to enhance public health awareness and reduce food waste through intelligent food label analysis. SmartFoods leverages advanced OCR technology to scan and interpret food packaging, providing comprehensive insights about nutritional quality, safety, and sustainability.
 
