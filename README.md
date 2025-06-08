@@ -1,4 +1,4 @@
- References - ravk1234/OCR-Food-ingredients-
+
 # SmartFoods - Intelligent Food Label Analysis App
 
 An innovative Android application designed to enhance public health awareness and reduce food waste through intelligent food label analysis. SmartFoods leverages advanced OCR technology to scan and interpret food packaging, providing comprehensive insights about nutritional quality, safety, and sustainability.
